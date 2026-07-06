@@ -1,0 +1,17 @@
+---
+description: Git commit workflow when the user asks to commit or uses /commit
+alwaysApply: false
+---
+
+# Git Commit
+
+Only commit when the user explicitly asks.
+
+Before committing, run in parallel: `git status`, `git diff`, `git log --oneline -5`.
+
+- Do not commit secrets (`.env`, credentials).
+- Do not amend unless the user asked, HEAD is yours unpushed, and the prior commit succeeded.
+- If a hook fails, fix and create a new commit — never amend a failed commit.
+- Use Conventional Commits with emoji when the repo does that already.
+- Message via HEREDOC; focus on why, not a file list.
+- Do not push unless asked.

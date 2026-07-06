@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build outputs
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# env / secrets
+.env
+.env.local
+.env.*.local
+
+# agent skill installs (compiled AGENTS.md bloats Cursor rules)
+.agents/
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.log
+tmp/
+
+# test coverage
+coverage/
