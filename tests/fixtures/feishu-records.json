@@ -1,0 +1,63 @@
+[
+  {
+    "record_id": "rec_valid_hackathon",
+    "created_time": 1782864000000,
+    "fields": {
+      "活动名称": [{ "text": "Global AI Build Hackathon" }],
+      "厂商": "OpenFuture",
+      "活动类型": "黑客松",
+      "推荐指数": "⭐⭐⭐⭐⭐",
+      "难度评级": "⭐⭐⭐ 中等挑战",
+      "难度说明": "需要提交 Demo",
+      "奖励详情": "USD 50,000\nMentorship and API credits",
+      "奖励类型": ["奖金", "API 积分"],
+      "活动形式": "Online",
+      "参与方式": "Register and submit a prototype.",
+      "获奖条件": "Impact and working demo.",
+      "时间节点备注": "Final review in September.",
+      "开始时间": 1783305600000,
+      "截止时间": 1785897540000,
+      "地区": "全球",
+      "官方确认": "✅ 官方确认",
+      "报名入口": [{ "link": "https://example.com/apply?ref=test" }],
+      "来源渠道": "Official website",
+      "预计投入": "1 week",
+      "建议": "立即行动",
+      "发现日期": 1782864000000,
+      "状态": "进行中"
+    }
+  },
+  {
+    "record_id": "rec_unknown_enum",
+    "fields": {
+      "活动名称": "未知类型权益",
+      "厂商": "VendorX",
+      "活动类型": "新奇活动",
+      "推荐指数": "not-a-star",
+      "奖励详情": "会员权益",
+      "奖励类型": "新奖励",
+      "截止时间": "",
+      "地区": "火星",
+      "官方确认": "⚠️ 待确认",
+      "报名入口": "https://example.com/unknown",
+      "状态": "新发现"
+    }
+  },
+  {
+    "record_id": "rec_bad_url",
+    "fields": {
+      "活动名称": "Bad URL",
+      "报名入口": "javascript:alert(1)",
+      "截止时间": 1785897540000
+    }
+  },
+  {
+    "record_id": "rec_skipped",
+    "fields": {
+      "活动名称": "Skipped campaign",
+      "报名入口": "https://example.com/skipped",
+      "截止时间": 1785897540000,
+      "状态": "已跳过"
+    }
+  }
+]
