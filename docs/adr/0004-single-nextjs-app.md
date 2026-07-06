@@ -1,0 +1,3 @@
+# Single Next.js app for MVP
+
+The MVP will use one Next.js application for the website and backend-for-frontend route handlers. Cloudflare may sit in front for domain and CDN concerns, but the app should not be self-hosted only because a server is available. The mini program path is protected by keeping the `ActivityOpportunity` JSON model stable, not by extracting a separate service early. Hono or a separate API service is deferred until multiple clients need a versioned shared API, the mini program requires independent backend ownership, or deployment constraints make a standalone service cheaper to operate.
