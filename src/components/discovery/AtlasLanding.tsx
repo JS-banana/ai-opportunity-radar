@@ -5,10 +5,10 @@ import { Icon } from "@/components/atlas/Icon";
 import { SearchBox } from "@/components/atlas/SearchBox";
 import { SiteNav } from "@/components/atlas/SiteNav";
 import { useOpportunityFilters, type OpportunityFilterKey } from "@/components/discovery/useOpportunityFilters";
-import { DeadlineCard, DeadlinePill } from "@/components/opportunity/DeadlineWidgets";
+import { DeadlineCard } from "@/components/opportunity/DeadlineWidgets";
 import { OpportunityCard } from "@/components/opportunity/OpportunityCard";
 import { deadlineSort } from "@/components/opportunity/card-helpers";
-import { copy, FILTER_KEYS, HERO_CHIP_KEYS } from "@/content/atlas-copy";
+import { copy, HERO_CHIP_KEYS } from "@/content/atlas-copy";
 import type { Locale } from "@/i18n/locales";
 import type { ActivityOpportunity } from "@/lib/opportunity/model";
 
@@ -25,8 +25,6 @@ export function AtlasLanding({ opportunities, locale, generatedAt, isStale = fal
   const text = copy[locale];
   const visible = useOpportunityFilters(opportunities, query, activeFilter);
   const closingSoon = [...opportunities].sort((a, b) => deadlineSort(a) - deadlineSort(b)).slice(0, 4);
-  const heroCards = visible.slice(0, 3);
-  const gridCards = visible;
 
   return (
     <main className="atlas-page">
@@ -34,7 +32,6 @@ export function AtlasLanding({ opportunities, locale, generatedAt, isStale = fal
       <section className="home-hero" id="discover">
         <div className="hero-grid-bg" />
         <div className="hero-inner">
-          <p className="hero-eyebrow">{text.eyebrow}</p>
           <h1>{text.title}</h1>
           <p className="hero-copy">{text.intro}</p>
           <SearchBox value={query} onChange={setQuery} placeholder={text.search} />
@@ -57,56 +54,18 @@ export function AtlasLanding({ opportunities, locale, generatedAt, isStale = fal
         </div>
       </section>
 
-      <section className="closing-band" aria-labelledby="closing-title">
-        <div className="closing-label">
-          <Icon name="clock" />
-          <h2 id="closing-title">{text.closing}</h2>
-        </div>
-        <div className="closing-items">
-          {closingSoon.slice(0, 2).map((item, index) => (
-            <DeadlinePill item={item} index={index} key={item.id} locale={locale} />
-          ))}
-        </div>
-        <a className="text-action" href="#deadline-watch">
-          {text.endingMore}
-          <Icon name="arrow" />
-        </a>
-      </section>
-
-      <section className="hero-cards" aria-label={text.all}>
-        {heroCards.map((item, index) => (
-          <OpportunityCard item={item} index={index} key={item.id} locale={locale} large />
-        ))}
-      </section>
-
       <section className="browse-state" id="opportunities">
         <div className="live-index" aria-hidden="true">
           <span />
           <b>LIVE INDEX</b>
         </div>
-        <div className="command-bar">
-          <SearchBox value={query} onChange={setQuery} placeholder={text.searchLong} compact />
-          <button className="select-button" type="button">
-            {text.recommended}
-            <Icon name="chevron" />
-          </button>
-          <div className="filter-chip-row">
-            {FILTER_KEYS.map((key) => (
-              <button className={key === activeFilter ? "chip selected" : "chip"} key={key} onClick={() => setActiveFilter(key)} type="button">
-                {text.filters[key]}
-              </button>
-            ))}
-          </div>
-          <button className="select-button filters" type="button">
-            <Icon name="sliders" />
-            {text.filtersButton}
-          </button>
-        </div>
 
-        <div className="section-heading" id="deadline-watch">
-          <div>
-            <h2>{text.closingSmall}</h2>
-            <p>{text.closingSub}</p>
+        <div className="section-heading deadline-heading" id="deadline-watch">
+          <div className="section-heading-label">
+            <Icon name="clock" />
+            <div>
+              <h2>{text.closing}</h2>
+            </div>
           </div>
         </div>
         <div className="deadline-grid">
@@ -127,8 +86,8 @@ export function AtlasLanding({ opportunities, locale, generatedAt, isStale = fal
           <p className="hero-copy">{text.noResults}</p>
         ) : (
           <div className="opportunity-grid">
-            {gridCards.map((item, index) => (
-              <OpportunityCard item={item} index={index + 3} key={item.id} locale={locale} lifted={index === 1} />
+            {visible.map((item, index) => (
+              <OpportunityCard item={item} index={index} key={item.id} locale={locale} />
             ))}
           </div>
         )}

@@ -7,33 +7,22 @@
     display: none;
   }
 
-  .hero-cards,
   .opportunity-grid,
   .deadline-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .command-bar {
-    grid-template-columns: 1fr 150px;
-  }
-
-  .filter-chip-row,
-  .select-button.filters {
-    grid-column: 1 / -1;
   }
 
   .category-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .smart-filter-ribbon,
-  .popular-band {
+  .smart-filter-ribbon {
     grid-template-columns: 1fr 1fr;
   }
 
   .smart-filter-ribbon strong,
-  .popular-band h2,
-  .popular-band .text-action {
+  .smart-filter-cell,
+  .smart-filter-ribbon .reset-filter {
     grid-column: 1 / -1;
   }
 }
@@ -92,41 +81,11 @@
     display: none;
   }
 
-  .closing-band,
-  .hero-cards,
   .browse-state,
   .categories-shell {
     width: min(100% - 28px, 560px);
   }
 
-  .closing-band {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .closing-items {
-    gap: 14px;
-  }
-
-  .deadline-pill {
-    grid-template-columns: 82px 1fr;
-    height: auto;
-    min-height: 112px;
-    padding: 12px;
-  }
-
-  .deadline-pill img {
-    width: 76px;
-    height: 76px;
-  }
-
-  .deadline-pill .deadline-badge {
-    grid-column: 2;
-    justify-self: start;
-  }
-
-  .closing-items,
-  .hero-cards,
   .opportunity-grid,
   .deadline-grid,
   .category-grid {
@@ -141,14 +100,8 @@
     height: 150px;
   }
 
-  .command-bar {
-    top: 68px;
-    grid-template-columns: 1fr;
-  }
-
   .category-top,
-  .smart-filter-ribbon,
-  .popular-band {
+  .smart-filter-ribbon {
     grid-template-columns: 1fr;
   }
 
