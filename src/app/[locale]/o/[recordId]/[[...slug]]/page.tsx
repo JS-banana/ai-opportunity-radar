@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { DetailDeadlineFact, DetailSectionBody, OfficialStatusBadge, StarRating } from "@/components/opportunity/DetailWidgets";
+import { copy } from "@/content/atlas-copy";
 import { isLocale, type Locale } from "@/i18n/locales";
 import { detailPath, formatDate, getPublicStatus, publicStatusLabel, shouldEmitEventJsonLd } from "@/lib/opportunity/derive";
 import { enumLabel } from "@/lib/opportunity/enums";
@@ -30,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${siteUrl}${detailPath(locale, opportunity)}`;
 
   return {
-    title: `${opportunity.title} | AI Opportunity Atlas`,
+    title: `${opportunity.title} | ${copy[locale].siteName}`,
     description,
     alternates: {
       canonical,
@@ -51,49 +53,89 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function OpportunityDetail({ params }: Props) {
   const { locale, opportunity } = await findOpportunity(params);
+  const text = copy[locale];
+  const detail = text.detail;
   const status = publicStatusLabel(getPublicStatus(opportunity.endAt), locale);
 
   return (
     <main className="opportunity-detail-page">
       {shouldEmitEventJsonLd(opportunity) ? <JsonLd opportunity={opportunity} locale={locale} /> : null}
       <nav className="detail-nav">
-        <Link href={`/${locale}`}>AI Opportunity Atlas</Link>
-        <Link href={`/${locale}`}>Discovery</Link>
-        <Link href={`/go/${opportunity.id}`}>Official entry</Link>
+        <Link href={`/${locale}`}>{text.siteName}</Link>
+        <Link href={`/${locale}`}>{detail.discovery}</Link>
+        <a href={`/go/${opportunity.id}`}>{detail.officialEntry}</a>
       </nav>
       <article className="detail-document">
-        <div className="detail-kicker">{enumLabel("type", opportunity.type, locale)} / {status}</div>
+        <div className="detail-kicker">
+          {enumLabel("type", opportunity.type, locale)} / {status}
+        </div>
         <h1>{opportunity.title}</h1>
         <p className="detail-vendor">{opportunity.vendor}</p>
         <div className="detail-actions">
-          <Link className="primary-button compact" href={`/go/${opportunity.id}`}>Enter official page</Link>
-          <span>{enumLabel("official", opportunity.officialStatus, locale)}</span>
+          <a className="primary-button compact detail-outbound" href={`/go/${opportunity.id}`}>
+            {detail.enterOfficial}
+          </a>
+          <OfficialStatusBadge status={opportunity.officialStatus} locale={locale} />
         </div>
         <dl className="detail-facts">
-          <div><dt>Score</dt><dd>{opportunity.score} / 5</dd></div>
-          <div><dt>Deadline</dt><dd>{formatDate(opportunity.endAt, locale)}</dd></div>
-          <div><dt>Region</dt><dd>{enumLabel("region", opportunity.region, locale)}</dd></div>
-          <div><dt>Difficulty</dt><dd>{opportunity.difficulty ?? "-"} / 5</dd></div>
+          <div className="detail-fact detail-fact-score">
+            <dt>{text.scoreIndex}</dt>
+            <dd>
+              <StarRating label={text.scoreIndex} value={opportunity.score} />
+            </dd>
+          </div>
+          <div className="detail-fact detail-fact-deadline">
+            <dt>{detail.deadline}</dt>
+            <dd>
+              <DetailDeadlineFact item={opportunity} locale={locale} />
+            </dd>
+          </div>
+          <div className="detail-fact">
+            <dt>{detail.region}</dt>
+            <dd>{enumLabel("region", opportunity.region, locale)}</dd>
+          </div>
+          <div className="detail-fact detail-fact-difficulty">
+            <dt>{detail.difficulty}</dt>
+            <dd>
+              {opportunity.difficulty ? (
+                <StarRating label={detail.difficulty} value={opportunity.difficulty} />
+              ) : (
+                <span className="detail-unset">{detail.difficultyUnset}</span>
+              )}
+            </dd>
+          </div>
         </dl>
-        <DetailSection title="Reward / 奖励" content={opportunity.rewardDetail ?? opportunity.rewardSummary} locale={locale} />
-        <DetailSection title="Participation / 参与方式" content={opportunity.participation} locale={locale} />
-        <DetailSection title="Winning criteria / 获奖条件" content={opportunity.winningCriteria} locale={locale} />
-        <DetailSection title="Timeline / 时间节点" content={opportunity.timelineNotes} locale={locale} />
+        <DetailSection title={detail.reward} content={opportunity.rewardDetail ?? opportunity.rewardSummary} locale={locale} variant="reward" />
+        <DetailSection title={detail.participation} content={opportunity.participation} locale={locale} />
+        <DetailSection title={detail.winningCriteria} content={opportunity.winningCriteria} locale={locale} variant="criteria" />
+        <DetailSection title={detail.timeline} content={opportunity.timelineNotes} locale={locale} />
         <footer className="detail-footer">
-          <span>Source: {opportunity.sourceChannel ?? "Maintained record"}</span>
-          <span>Discovered: {formatDate(opportunity.discoveredAt, locale)}</span>
+          <span>
+            {detail.source}: {opportunity.sourceChannel ?? detail.maintainedRecord}
+          </span>
+          <span>
+            {detail.discovered}: {formatDate(opportunity.discoveredAt, locale)}
+          </span>
         </footer>
       </article>
     </main>
   );
 }
 
-function DetailSection({ title, content, locale }: { title: string; content: string | null; locale: Locale }) {
+type DetailSectionProps = {
+  title: string;
+  content: string | null;
+  locale: Locale;
+  variant?: "default" | "reward" | "criteria";
+};
+
+function DetailSection({ title, content, locale, variant = "default" }: DetailSectionProps) {
   if (!content) return null;
+  const sectionClass = variant === "reward" ? "detail-section detail-section-reward" : "detail-section";
   return (
-    <section className="detail-section">
+    <section className={sectionClass}>
       <h2>{title}</h2>
-      <p lang={locale === "en" ? "zh" : undefined}>{content}</p>
+      <DetailSectionBody content={content} locale={locale} variant={variant} />
     </section>
   );
 }
