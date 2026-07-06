@@ -26,7 +26,7 @@
 - UI 主骨架已完成：`/[locale]` 首页、首屏 hero、Closing Soon、搜索/筛选条、Deadline Watch、机会卡片网格、`/[locale]/categories` 分类浏览页。
 - 详情页、About、Contact、Privacy、Terms 已可用，但还不是高保真视觉重点；先保证真实数据链路和内容正确。
 - 数据链路代码已有：Feishu client、字段校验、mapper、派生规则、seed snapshot、Blob snapshot、SWR 刷新语义、outbound route、lib 测试。
-- 当前 `.env` 只有 `FEISHU_APP_ID` 和 `FEISHU_APP_SECRET`；真实数据验收还缺 `FEISHU_APP_TOKEN`、`FEISHU_TABLE_ID`，Blob 持久化还缺 `BLOB_READ_WRITE_TOKEN`。
+- 本地 `.env` 已具备 Feishu 四元组；`dump:snapshot` 可拉取 61 条 live 记录。Blob 持久化（`BLOB_READ_WRITE_TOKEN`）与生产部署仍待配置。
 
 ## Source Of Truth
 

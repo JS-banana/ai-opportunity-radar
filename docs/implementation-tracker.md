@@ -24,24 +24,33 @@ ADRs 记录架构决策；本文只记录当前执行状态和下一步任务。
 
 | Phase | Status | Notes |
 |---|---|---|
-| Phase 0 — Live data verification | Blocked by env | Feishu client、mapper、snapshot builder、`pnpm dump:snapshot` 已有；当前本地只配置了 app id/secret，还缺 Base app token/table id。 |
-| Phase 1 — Core product link | Mostly done | 发现页、分类页、详情页、outbound、seed snapshot、Blob SWR skeleton、lib tests 已实现；真实数据验收后补显示控制细节。 |
+| Phase 0 — Live data verification | Done | `.env` 四元组齐全；`dump:snapshot` 成功：`fields: 22`、`records: 61`、`skipped: 0`、gzip 前 JSON 73,949 bytes（&lt; 500KB）。 |
+| Phase 1 — Core product link | Done | 发现页全量网格、chip 筛选、空结果 UX、分类页搜索与真实计数、stale 数据时间展示已接线；详情/outbound/SWR/lib tests 已有。live enum 已对账；`tests/live-snapshot.test.ts` + 生产构建 spot-check 已用 61 条真实快照验收（50 active / 11 expired）。 |
 | Phase 2 — SEO / bilingual | In progress | metadata、hreflang、robots、sitemap、JSON-LD gate、静态政策页已存在；copy 和详情页结构仍可根据真实内容优化。 |
 | Phase 3 — Launch | Pending | 域名、Search Console、生产 analytics、Vercel Blob token、日志验证未做。 |
 
 ## Next Task Plan
 
-1. 补齐环境变量：`FEISHU_APP_TOKEN`、`FEISHU_TABLE_ID`，部署侧再配 `BLOB_READ_WRITE_TOKEN`。
-2. 跑 `pnpm dump:snapshot -- --out tmp/snapshot.json`，检查字段数量、记录数、跳过原因、JSON/gzip 体积。
-3. 用真实 snapshot 对照 UI：标题长度、奖励摘要、截止状态、分类命中、详情字段、官方跳转。
-4. 根据真实字段补 enum 映射和显示控制；只在 mapper/enum 层处理 Base 字段噪声。
-5. 再做详情页视觉精修和 SEO copy，而不是先扩展后台或搜索服务。
+1. 部署侧配置 `BLOB_READ_WRITE_TOKEN`，验证 Blob 读写与 SWR 后台刷新（用户明确暂缓）。
+2. 域名、Search Console、生产 analytics 等 Phase 3 上线项。
+3. 可选：首页筛选状态同步到 URL query（build spec §8，非 MVP 阻塞）。
+
+## 2026-07-06 验收记录
+
+| 检查项 | 结果 |
+|---|---|
+| `pnpm lint` / `test` / `typecheck` / `build` | 全部通过（含 `live-snapshot` 集成测试，需先 `dump:snapshot`） |
+| `pnpm dump:snapshot` | **成功** — `fields: 22`、`records: 61`、`skipped: 0`、JSON 73,949 bytes / gzip ~16.7KB |
+| mapper-enum-reconcile | **完成** — live Base 枚举全覆盖 |
+| e2e-verification | **完成** — `/zh` SEO 隐藏链接 50 条；`/zh/categories`、详情、`/go/{id}` 302 到官方 URL；metadata/JSON-LD 正常 |
+| prod-blob-verify | **跳过** — 用户要求暂缓 Blob/Vercel 部署 |
 
 ## Verification Commands
 
 ```bash
 pnpm lint
 pnpm test
+pnpm dump:snapshot -- --out tmp/snapshot.json   # 本地 live 集成测试依赖此文件
 pnpm typecheck
 pnpm build
 ```
