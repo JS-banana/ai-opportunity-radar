@@ -7,7 +7,7 @@ describe("mapRecordsToOpportunities", () => {
   const result = mapRecordsToOpportunities(records as FeishuRecord[], new Date("2026-07-05T00:00:00.000Z"));
 
   it("maps valid Feishu records into opportunities", () => {
-    expect(result.opportunities).toHaveLength(2);
+    expect(result.opportunities).toHaveLength(3);
     const first = result.opportunities[0];
     expect(first.title).toBe("Global AI Build Hackathon");
     expect(first.score).toBe(5);
@@ -16,6 +16,14 @@ describe("mapRecordsToOpportunities", () => {
     expect(first.rewardTypes).toEqual(["cash", "api-credits"]);
     expect(first.registrationUrl).toBe("https://example.com/apply?ref=test");
     expect(first.slug).toBe("global-ai-build-hackathon");
+  });
+
+  it("maps live Feishu enum values from snapshot", () => {
+    const live = result.opportunities.find((item) => item.id === "rec_live_hackathon");
+    expect(live?.type).toBe("hackathon");
+    expect(live?.region).toBe("north-america");
+    expect(live?.rewardTypes).toEqual(["cash"]);
+    expect(live?.officialStatus).toBe("confirmed");
   });
 
   it("fails soft on unknown enums and malformed score", () => {

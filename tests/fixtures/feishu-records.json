@@ -59,5 +59,36 @@
       "截止时间": 1785897540000,
       "状态": "已跳过"
     }
+  },
+  {
+    "record_id": "rec_live_hackathon",
+    "created_time": 1782016515866,
+    "fields": {
+      "活动名称": [{ "text": "AI Hackathon Genesis S1", "type": "text" }],
+      "厂商": "Bitget",
+      "活动类型": "Hackathon",
+      "推荐指数": "⭐⭐⭐⭐",
+      "难度评级": "⭐⭐⭐⭐⭐ 专业挑战",
+      "难度说明": [{ "text": "需提交完整 AI 交易机器人", "type": "text" }],
+      "奖励详情": [{ "text": "奖金池待公布", "type": "text" }],
+      "奖励类型": ["现金"],
+      "活动形式": [{ "text": "线上 Hackathon，提交 AI 交易策略", "type": "text" }],
+      "参与方式": [{ "text": "Bitget 平台报名", "type": "text" }],
+      "获奖条件": [{ "text": "评委评审 Top 方案", "type": "text" }],
+      "时间节点备注": [{ "text": "进行中", "type": "text" }],
+      "开始时间": 1780243200000,
+      "截止时间": 1785427200000,
+      "地区": "美国",
+      "官方确认": "✅ 官方确认",
+      "报名入口": {
+        "link": "https://example.com/bitget-hackathon",
+        "text": "https://example.com/bitget-hackathon",
+        "type": "url"
+      },
+      "来源渠道": "其他",
+      "预计投入": "1-3天",
+      "发现日期": 1782016515866,
+      "状态": "新发现"
+    }
   }
 ]
