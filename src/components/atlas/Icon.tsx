@@ -8,6 +8,7 @@ export type IconName =
   | "clock"
   | "filter"
   | "gift"
+  | "github"
   | "globe"
   | "grid"
   | "mail"
@@ -28,6 +29,7 @@ export function Icon({ name }: { name: IconName }) {
   if (name === "clock") return <svg {...common}><circle cx="12" cy="12" r="9" {...stroke} /><path d="M12 7v5l3 2" {...stroke} /></svg>;
   if (name === "filter") return <svg {...common}><path d="M4 6h16M7 12h10M10 18h4" {...stroke} /></svg>;
   if (name === "gift") return <svg {...common}><path d="M20 12v8H4v-8M3 8h18v4H3zM12 8v12M12 8H8.5A2.5 2.5 0 1 1 11 5.5L12 8Zm0 0h3.5A2.5 2.5 0 1 0 13 5.5L12 8Z" {...stroke} /></svg>;
+  if (name === "github") return <svg {...common}><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" {...stroke} /></svg>;
   if (name === "globe") return <svg {...common}><circle cx="12" cy="12" r="9" {...stroke} /><path d="M3 12h18M12 3c2.4 2.6 3.6 5.6 3.6 9S14.4 18.4 12 21M12 3C9.6 5.6 8.4 8.6 8.4 12S9.6 18.4 12 21" {...stroke} /></svg>;
   if (name === "grid") return <svg {...common}><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" {...stroke} /></svg>;
   if (name === "mail") return <svg {...common}><path d="M4 6h16v12H4z" {...stroke} /><path d="m4 7 8 6 8-6" {...stroke} /></svg>;
