@@ -1,0 +1,256 @@
+.categories-shell {
+  padding: 34px 0 56px;
+}
+
+.categories-page::before {
+  background-image:
+    linear-gradient(rgba(23, 25, 29, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 25, 29, 0.045) 1px, transparent 1px),
+    radial-gradient(ellipse at 86% 10%, transparent 0 35%, rgba(8, 114, 112, 0.12) 35.2% 35.6%, transparent 35.8% 100%);
+}
+
+.category-top {
+  display: grid;
+  grid-template-columns: 1fr minmax(340px, 460px);
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.category-top h1 {
+  margin: 0 0 10px;
+  font-size: clamp(34px, 4vw, 44px);
+  line-height: 1.06;
+}
+
+.category-top p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.smart-filter-ribbon {
+  display: grid;
+  grid-template-columns: 150px repeat(5, minmax(130px, 1fr)) 96px;
+  align-items: stretch;
+  min-height: 62px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.smart-filter-ribbon strong {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.smart-filter-ribbon button {
+  display: grid;
+  grid-template-columns: 24px 1fr auto 16px;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  border-left: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+}
+
+.smart-filter-ribbon button svg:first-child {
+  color: var(--teal);
+}
+
+.smart-filter-ribbon button span {
+  font-weight: 700;
+}
+
+.smart-filter-ribbon button small {
+  color: var(--muted);
+}
+
+.smart-filter-ribbon .reset-filter {
+  grid-template-columns: 1fr 18px;
+  padding: 0 16px;
+  color: var(--teal);
+  font-weight: 760;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.category-card {
+  position: relative;
+  height: 268px;
+  min-height: 248px;
+  overflow: hidden;
+}
+
+.category-card.featured {
+  grid-column: span 2;
+}
+
+.category-image {
+  position: relative;
+  height: 92px;
+  overflow: hidden;
+  background: #0c302f;
+}
+
+.category-card.featured .category-image {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 57%;
+  height: auto;
+}
+
+.category-image img {
+  object-fit: cover;
+}
+
+.category-card.featured .category-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 253, 248, 0.16) 56%, var(--surface-strong) 100%);
+}
+
+.category-content {
+  position: relative;
+  min-height: 100%;
+  padding: 14px 14px 54px;
+}
+
+.category-card.featured .category-content {
+  width: 50%;
+  margin-left: auto;
+  padding: 22px 24px 54px;
+}
+
+.category-number {
+  display: inline-grid;
+  place-items: center;
+  min-width: 32px;
+  height: 28px;
+  margin-right: 8px;
+  border-radius: 7px;
+  background: rgba(255, 253, 248, 0.84);
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.category-card .bookmark {
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+}
+
+.category-card h2 {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.category-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #494d49;
+  font-size: 13px;
+}
+
+.mini-chip-row {
+  gap: 7px;
+  margin: 10px 0 12px;
+}
+
+.mini-chip-row span {
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.64);
+  font-size: 11px;
+  font-weight: 610;
+}
+
+.category-footer {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  color: var(--amber);
+  font-size: 13px;
+}
+
+.category-footer span,
+.category-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.category-footer a {
+  color: var(--teal-dark);
+  font-weight: 760;
+}
+
+.popular-band {
+  display: grid;
+  grid-template-columns: 190px repeat(4, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 16px 20px;
+}
+
+.popular-band h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.combo-card {
+  display: grid;
+  grid-template-columns: 44px 1fr 18px;
+  gap: 10px;
+  align-items: center;
+  min-height: 62px;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.combo-icon {
+  display: grid;
+  grid-row: span 2;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+}
+
+.combo-card b {
+  font-size: 14px;
+}
+
+.combo-card small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.combo-card > svg {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
