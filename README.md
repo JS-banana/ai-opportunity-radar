@@ -21,6 +21,8 @@ pnpm install
 pnpm dev
 ```
 
+无 Feishu 凭证时，可先 `pnpm dump:snapshot -- --out tmp/snapshot.json` 生成本地快照，或依赖内置 seed 数据。
+
 ```bash
 pnpm lint
 pnpm typecheck

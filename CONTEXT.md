@@ -25,7 +25,7 @@ _Avoid_: CMS 文章, 活动新闻稿
 _Avoid_: Base 字段, 原始记录
 
 **已接受视觉复刻**:
-当前首页和分类页的设计方向，来源于 `docs/design/references/v2-*.png`，实现集中在 `AtlasLanding.tsx` 和 `src/styles/atlas*.css`。
+当前首页和分类页的设计方向，来源于 `docs/design/references/v2-*.png`，实现集中在 `src/components/discovery/` 与 `src/styles/atlas*.css`。
 _Avoid_: 临时样式, 占位首页
 
 **即将截止**:
