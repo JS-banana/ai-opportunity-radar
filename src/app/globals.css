@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@import "../styles/atlas.css";
+@import "../styles/atlas-categories.css";
+@import "../styles/atlas-responsive.css";
+
+.opportunity-detail-page,
+.info-page {
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.seo-opportunity-links {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.detail-nav,
+.info-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 28px 52px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-nav a:first-child,
+.info-nav a:first-child {
+  margin-right: auto;
+  font-weight: 750;
+  color: var(--teal);
+}
+
+.detail-document,
+.info-page article {
+  width: min(920px, calc(100vw - 40px));
+  margin: 56px auto;
+  padding: 48px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: var(--shadow);
+}
+
+.detail-kicker {
+  color: var(--orange);
+  font-weight: 750;
+}
+
+.detail-document h1,
+.info-page h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(44px, 6vw, 78px);
+  line-height: 1.04;
+}
+
+.detail-vendor {
+  color: var(--teal);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.detail-actions,
+.detail-facts,
+.detail-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.detail-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 34px 0;
+}
+
+.detail-facts div,
+.detail-section {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.detail-facts dt {
+  color: var(--muted);
+}
+
+.detail-facts dd {
+  margin: 8px 0 0;
+  color: var(--teal);
+  font-size: 22px;
+  font-weight: 750;
+}
+
+.detail-section {
+  margin-top: 18px;
+}
+
+.detail-section h2 {
+  margin: 0 0 10px;
+}
+
+.detail-section p,
+.info-page p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.detail-footer {
+  justify-content: space-between;
+  margin-top: 28px;
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .detail-nav,
+  .info-nav {
+    flex-wrap: wrap;
+    padding: 18px 20px;
+  }
+
+  .detail-document,
+  .info-page article {
+    margin: 24px auto;
+    padding: 24px;
+  }
+
+  .detail-facts {
+    grid-template-columns: 1fr;
+  }
+}
