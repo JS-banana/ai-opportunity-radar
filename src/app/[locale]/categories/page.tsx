@@ -36,7 +36,14 @@ export default async function LocaleCategories({ params }: Props) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  const { opportunities } = await getActiveOpportunities();
+  const { opportunities, snapshot, isStale } = await getActiveOpportunities();
 
-  return <CategoriesPage opportunities={opportunities} locale={locale as Locale} />;
+  return (
+    <CategoriesPage
+      opportunities={opportunities}
+      locale={locale as Locale}
+      generatedAt={snapshot.generatedAt}
+      isStale={isStale}
+    />
+  );
 }

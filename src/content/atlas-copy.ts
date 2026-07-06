@@ -3,6 +3,9 @@ import type { Locale } from "@/i18n/locales";
 export const FILTER_KEYS = ["all", "ending-soon", "hackathon", "grant", "api-credits", "online", "prize"] as const;
 export type FilterKey = (typeof FILTER_KEYS)[number];
 
+export const HERO_CHIP_KEYS = ["all", "ending-soon", "new", "online", "prize", "api-credits"] as const;
+export type HeroChipKey = (typeof HERO_CHIP_KEYS)[number];
+
 export const copy = {
   en: {
     nav: ["Discover", "Categories", "Submit", "About"],
@@ -48,6 +51,9 @@ export const copy = {
     allCombinations: "View all combinations",
     longTerm: "Long-term",
     verified: "verified",
+    dataUpdated: "Data updated {age}",
+    dataStale: "May be outdated",
+    noResults: "No matching opportunities",
   },
   zh: {
     nav: ["发现", "分类", "提交", "关于"],
@@ -93,5 +99,8 @@ export const copy = {
     allCombinations: "查看全部组合",
     longTerm: "长期开放",
     verified: "已验证",
+    dataUpdated: "数据更新于 {age}",
+    dataStale: "可能不是最新",
+    noResults: "没有匹配的机会",
   },
 } as const satisfies Record<Locale, Record<string, unknown>>;

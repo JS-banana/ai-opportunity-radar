@@ -4,31 +4,33 @@ import { useState } from "react";
 import { Icon } from "@/components/atlas/Icon";
 import { SearchBox } from "@/components/atlas/SearchBox";
 import { SiteNav } from "@/components/atlas/SiteNav";
-import { useOpportunityFilters } from "@/components/discovery/useOpportunityFilters";
+import { useOpportunityFilters, type OpportunityFilterKey } from "@/components/discovery/useOpportunityFilters";
 import { DeadlineCard, DeadlinePill } from "@/components/opportunity/DeadlineWidgets";
 import { OpportunityCard } from "@/components/opportunity/OpportunityCard";
 import { deadlineSort } from "@/components/opportunity/card-helpers";
-import { copy, FILTER_KEYS, type FilterKey } from "@/content/atlas-copy";
+import { copy, FILTER_KEYS, HERO_CHIP_KEYS } from "@/content/atlas-copy";
 import type { Locale } from "@/i18n/locales";
 import type { ActivityOpportunity } from "@/lib/opportunity/model";
 
 type AtlasLandingProps = {
   opportunities: ActivityOpportunity[];
   locale: Locale;
+  generatedAt?: string;
+  isStale?: boolean;
 };
 
-export function AtlasLanding({ opportunities, locale }: AtlasLandingProps) {
+export function AtlasLanding({ opportunities, locale, generatedAt, isStale = false }: AtlasLandingProps) {
   const [query, setQuery] = useState("");
-  const [activeFilter, setActiveFilter] = useState<FilterKey>("all");
+  const [activeFilter, setActiveFilter] = useState<OpportunityFilterKey>("all");
   const text = copy[locale];
   const visible = useOpportunityFilters(opportunities, query, activeFilter);
-  const fallbackRows = visible.length ? visible : opportunities;
   const closingSoon = [...opportunities].sort((a, b) => deadlineSort(a) - deadlineSort(b)).slice(0, 4);
-  const topCards = fallbackRows.slice(0, 6);
+  const heroCards = visible.slice(0, 3);
+  const gridCards = visible;
 
   return (
     <main className="atlas-page">
-      <SiteNav locale={locale} active="discover" />
+      <SiteNav locale={locale} active="discover" generatedAt={generatedAt} isStale={isStale} />
       <section className="home-hero" id="discover">
         <div className="hero-grid-bg" />
         <div className="hero-inner">
@@ -37,12 +39,20 @@ export function AtlasLanding({ opportunities, locale }: AtlasLandingProps) {
           <p className="hero-copy">{text.intro}</p>
           <SearchBox value={query} onChange={setQuery} placeholder={text.search} />
           <div className="chip-row hero-chips">
-            {text.chips.map((chip) => (
-              <button className={chip === text.chips[0] ? "chip selected" : "chip"} key={chip} type="button">
-                {chip === text.chips[1] ? <span className="amber-dot" /> : null}
-                {chip}
-              </button>
-            ))}
+            {text.chips.map((chip, index) => {
+              const key = HERO_CHIP_KEYS[index];
+              return (
+                <button
+                  className={key === activeFilter ? "chip selected" : "chip"}
+                  key={chip}
+                  onClick={() => setActiveFilter(key)}
+                  type="button"
+                >
+                  {index === 1 ? <span className="amber-dot" /> : null}
+                  {chip}
+                </button>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -64,7 +74,7 @@ export function AtlasLanding({ opportunities, locale }: AtlasLandingProps) {
       </section>
 
       <section className="hero-cards" aria-label={text.all}>
-        {topCards.slice(0, 3).map((item, index) => (
+        {heroCards.map((item, index) => (
           <OpportunityCard item={item} index={index} key={item.id} locale={locale} large />
         ))}
       </section>
@@ -109,15 +119,19 @@ export function AtlasLanding({ opportunities, locale }: AtlasLandingProps) {
           <div>
             <h2>{text.all}</h2>
             <p>
-              {fallbackRows.length} {text.results}
+              {visible.length} {text.results}
             </p>
           </div>
         </div>
-        <div className="opportunity-grid">
-          {topCards.map((item, index) => (
-            <OpportunityCard item={item} index={index + 3} key={item.id} locale={locale} lifted={index === 1} />
-          ))}
-        </div>
+        {visible.length === 0 ? (
+          <p className="hero-copy">{text.noResults}</p>
+        ) : (
+          <div className="opportunity-grid">
+            {gridCards.map((item, index) => (
+              <OpportunityCard item={item} index={index + 3} key={item.id} locale={locale} lifted={index === 1} />
+            ))}
+          </div>
+        )}
       </section>
     </main>
   );

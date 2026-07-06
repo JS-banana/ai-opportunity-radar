@@ -45,7 +45,7 @@ export default async function LocaleHome({ params }: Props) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  const { opportunities } = await getActiveOpportunities();
+  const { opportunities, snapshot, isStale } = await getActiveOpportunities();
 
   const typedLocale = locale as Locale;
 
@@ -58,7 +58,12 @@ export default async function LocaleHome({ params }: Props) {
           </Link>
         ))}
       </nav>
-      <AtlasLanding opportunities={opportunities} locale={typedLocale} />
+      <AtlasLanding
+        opportunities={opportunities}
+        locale={typedLocale}
+        generatedAt={snapshot.generatedAt}
+        isStale={isStale}
+      />
     </>
   );
 }
