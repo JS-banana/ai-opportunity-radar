@@ -6,7 +6,7 @@ import { buildSnapshotFromFeishu } from "../src/lib/snapshot/refresh";
 loadDotEnv(".env");
 
 const outIndex = process.argv.indexOf("--out");
-const outPath = outIndex >= 0 ? process.argv[outIndex + 1] : null;
+const outPath = outIndex >= 0 ? process.argv[outIndex + 1] : "tmp/snapshot.json";
 
 async function main() {
   const result = await buildSnapshotFromFeishu(new Date());
@@ -15,11 +15,8 @@ async function main() {
   const gzipBytes = gzipSync(json).byteLength;
   const skipped = result.issues.filter((issue) => issue.severity === "skip");
 
-  if (outPath) {
-    await writeFile(outPath, json);
-  } else {
-    process.stdout.write(`${json}\n`);
-  }
+  await writeFile(outPath, json);
+  console.error(`wrote: ${outPath}`);
 
   console.error("\nSnapshot report");
   console.error(`fields: ${result.fields.length}`);

@@ -1,6 +1,7 @@
 import { after } from "next/server";
 import { hasFeishuEnv, getSnapshotTtlMs } from "@/lib/env";
 import type { Snapshot } from "@/lib/opportunity/model";
+import { readSnapshotFromLocalFile } from "./local";
 import { seedSnapshot } from "./seed";
 import { refreshSnapshot } from "./refresh";
 import { readSnapshotFromBlob } from "./store";
@@ -8,7 +9,7 @@ import { readSnapshotFromBlob } from "./store";
 export type SnapshotResult = {
   snapshot: Snapshot;
   isStale: boolean;
-  source: "memory" | "blob" | "feishu" | "seed";
+  source: "memory" | "blob" | "local" | "feishu" | "seed";
 };
 
 let memory: { snapshot: Snapshot; expiresAt: number } | null = null;
@@ -31,6 +32,11 @@ export async function getSnapshot(now = new Date()): Promise<SnapshotResult> {
   }
 
   if (!hasFeishuEnv()) {
+    const localSnapshot = readSnapshotFromLocalFile();
+    if (localSnapshot) {
+      memory = { snapshot: localSnapshot, expiresAt: nowMs + ttlMs };
+      return { snapshot: localSnapshot, isStale: true, source: "local" };
+    }
     return { snapshot: seedSnapshot, isStale: true, source: "seed" };
   }
 
