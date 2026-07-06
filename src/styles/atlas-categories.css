@@ -31,11 +31,10 @@
 
 .smart-filter-ribbon {
   display: grid;
-  grid-template-columns: 150px repeat(5, minmax(130px, 1fr)) 96px;
+  grid-template-columns: minmax(108px, 150px) repeat(5, minmax(0, 1fr)) minmax(84px, 96px);
   align-items: stretch;
   min-height: 62px;
   margin-bottom: 18px;
-  overflow: hidden;
 }
 
 .smart-filter-ribbon strong {
@@ -45,37 +44,107 @@
   color: var(--teal);
   font-size: 13px;
   font-weight: 850;
+  white-space: nowrap;
 }
 
-.smart-filter-ribbon button {
-  display: grid;
-  grid-template-columns: 24px 1fr auto 16px;
+.smart-filter-cell {
+  position: relative;
+  min-width: 0;
+  border-left: 1px solid var(--line);
+}
+
+.smart-filter-ribbon .filter-trigger,
+.smart-filter-ribbon .reset-filter {
+  display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
+  min-height: 62px;
+  padding: 0 14px;
   border: 0;
-  border-left: 1px solid var(--line);
   background: transparent;
   color: var(--ink);
   text-align: left;
 }
 
-.smart-filter-ribbon button svg:first-child {
+.smart-filter-ribbon .filter-trigger:hover,
+.smart-filter-ribbon .filter-trigger.open {
+  background: rgba(8, 114, 112, 0.05);
+}
+
+.smart-filter-ribbon .filter-trigger svg:first-child {
+  flex: 0 0 20px;
   color: var(--teal);
 }
 
-.smart-filter-ribbon button span {
-  font-weight: 700;
+.smart-filter-ribbon .filter-label-group {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  overflow: hidden;
 }
 
-.smart-filter-ribbon button small {
+.smart-filter-ribbon .filter-name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.smart-filter-ribbon .filter-label-group small {
   color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.smart-filter-ribbon .filter-trigger > svg:last-child {
+  flex: 0 0 16px;
+  color: var(--soft);
 }
 
 .smart-filter-ribbon .reset-filter {
-  grid-template-columns: 1fr 18px;
-  padding: 0 16px;
+  justify-content: center;
+  border-left: 1px solid var(--line);
   color: var(--teal);
   font-weight: 760;
+}
+
+.smart-filter-ribbon .reset-filter:disabled {
+  opacity: 0.42;
+  cursor: default;
+}
+
+.filter-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: -1px;
+  z-index: 40;
+  min-width: calc(100% + 2px);
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.filter-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+}
+
+.filter-menu button:hover,
+.filter-menu button.selected {
+  background: var(--teal-soft);
+  color: var(--teal-dark);
 }
 
 .category-grid {
@@ -89,6 +158,21 @@
   height: 268px;
   min-height: 248px;
   overflow: hidden;
+}
+
+.category-card.interactive {
+  cursor: pointer;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.category-card.interactive:hover,
+.category-card.interactive:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(8, 114, 112, 0.22);
+}
+
+.category-card.selected {
+  box-shadow: inset 0 0 0 2px var(--teal);
 }
 
 .category-card.featured {
@@ -201,56 +285,43 @@
   white-space: nowrap;
 }
 
-.category-footer a {
+.category-footer a,
+.category-footer .category-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.category-footer .category-action {
   color: var(--teal-dark);
   font-weight: 760;
 }
 
-.popular-band {
-  display: grid;
-  grid-template-columns: 190px repeat(4, 1fr) auto;
-  align-items: center;
-  gap: 16px;
-  margin-top: 18px;
-  padding: 16px 20px;
+.category-card.selected .category-action {
+  color: var(--teal);
 }
 
-.popular-band h2 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.combo-card {
-  display: grid;
-  grid-template-columns: 44px 1fr 18px;
-  gap: 10px;
-  align-items: center;
-  min-height: 62px;
-  padding: 10px 12px;
-  text-align: left;
-}
-
-.combo-icon {
-  display: grid;
-  grid-row: span 2;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: var(--teal);
-  color: #fff;
-}
-
-.combo-card b {
-  font-size: 14px;
-}
-
-.combo-card small {
+.category-hint {
+  margin: 18px 0 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 15px;
 }
 
-.combo-card > svg {
-  grid-column: 3;
-  grid-row: 1 / span 2;
+.category-results {
+  margin-top: 28px;
+}
+
+.category-results .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.category-clear {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
 }
