@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AtlasLanding } from "@/components/discovery/AtlasLanding";
+import { copy } from "@/content/atlas-copy";
 import { isLocale, type Locale } from "@/i18n/locales";
 import { detailPath } from "@/lib/opportunity/derive";
 import { getActiveOpportunities } from "@/lib/page-data/getActiveOpportunities";
@@ -16,7 +17,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  const title = "AI Opportunity Atlas";
+  const title = copy[locale].siteName;
   const description =
     locale === "zh"
       ? "发现值得参加的 AI 活动、编程挑战、黑客松、积分和权益机会。"
