@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AtlasLanding } from "@/components/AtlasLanding";
+import { AtlasLanding } from "@/components/discovery/AtlasLanding";
 import { isLocale, type Locale } from "@/i18n/locales";
-import { detailPath, getDeadlineBucket, sortOpportunities } from "@/lib/opportunity/derive";
-import { getSnapshot } from "@/lib/snapshot/get";
+import { detailPath } from "@/lib/opportunity/derive";
+import { getActiveOpportunities } from "@/lib/page-data/getActiveOpportunities";
 import { siteUrl } from "@/lib/site";
 
 export const revalidate = 300;
@@ -45,8 +45,7 @@ export default async function LocaleHome({ params }: Props) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  const result = await getSnapshot();
-  const opportunities = sortOpportunities(result.snapshot.opportunities).filter((item) => getDeadlineBucket(item.endAt) !== "expired");
+  const { opportunities } = await getActiveOpportunities();
 
   const typedLocale = locale as Locale;
 
@@ -59,13 +58,7 @@ export default async function LocaleHome({ params }: Props) {
           </Link>
         ))}
       </nav>
-      <AtlasLanding
-        opportunities={opportunities}
-        locale={typedLocale}
-        snapshotGeneratedAt={result.snapshot.generatedAt}
-        isStale={result.isStale}
-        source={result.source}
-      />
+      <AtlasLanding opportunities={opportunities} locale={typedLocale} />
     </>
   );
 }

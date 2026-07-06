@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { CategoriesPage } from "@/components/AtlasLanding";
+import { CategoriesPage } from "@/components/discovery/CategoriesPage";
 import { isLocale, type Locale } from "@/i18n/locales";
-import { getDeadlineBucket, sortOpportunities } from "@/lib/opportunity/derive";
-import { getSnapshot } from "@/lib/snapshot/get";
+import { getActiveOpportunities } from "@/lib/page-data/getActiveOpportunities";
 import { siteUrl } from "@/lib/site";
 
 export const revalidate = 300;
@@ -37,8 +36,7 @@ export default async function LocaleCategories({ params }: Props) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  const result = await getSnapshot();
-  const opportunities = sortOpportunities(result.snapshot.opportunities).filter((item) => getDeadlineBucket(item.endAt) !== "expired");
+  const { opportunities } = await getActiveOpportunities();
 
   return <CategoriesPage opportunities={opportunities} locale={locale as Locale} />;
 }
