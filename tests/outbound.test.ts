@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { registrationUrlFor } from "@/lib/opportunity/outbound";
-import { seedSnapshot } from "@/lib/snapshot/seed";
+import { seedSnapshot } from "./fixtures/seed";
 
 describe("registrationUrlFor", () => {
   it("resolves URLs only by record id", () => {

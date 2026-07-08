@@ -1,16 +1,15 @@
-import { existsSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { detailPath, getDeadlineBucket, sortOpportunities } from "@/lib/opportunity/derive";
 import { registrationUrlFor } from "@/lib/opportunity/outbound";
 import { SnapshotSchema } from "@/lib/opportunity/model";
 
-const snapshotPath = "tmp/snapshot.json";
-const hasLiveSnapshot = existsSync(snapshotPath);
+const snapshotPath = "src/data/snapshot.json";
 
-describe.skipIf(!hasLiveSnapshot)("live snapshot integration", () => {
+describe("bundled snapshot integration", () => {
   const snapshot = SnapshotSchema.parse(JSON.parse(readFileSync(snapshotPath, "utf8")));
 
-  it("matches the latest Feishu dump contract", () => {
+  it("matches the snapshot contract", () => {
     expect(snapshot.schemaVersion).toBe(1);
     expect(snapshot.recordCount).toBe(snapshot.opportunities.length);
     expect(snapshot.skippedCount).toBe(0);

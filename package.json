@@ -10,11 +10,10 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "dump:snapshot": "tsx scripts/dump-snapshot.ts"
+    "sync:snapshot": "tsx scripts/sync-snapshot.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
-    "@vercel/blob": "^2.5.0",
     "next": "15.5.20",
     "next-intl": "^4.13.1",
     "react": "19.2.7",

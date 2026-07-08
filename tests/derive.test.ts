@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { getDeadlineBucket, getPublicStatus, makeSlug, sortOpportunities } from "@/lib/opportunity/derive";
-import { seedSnapshot } from "@/lib/snapshot/seed";
+import { seedSnapshot } from "./fixtures/seed";
 
 describe("deadline derivation", () => {
   const now = new Date("2026-07-05T00:00:00.000Z");

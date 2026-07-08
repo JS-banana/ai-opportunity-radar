@@ -1,0 +1,52 @@
+name: Sync Feishu snapshot
+
+on:
+  schedule:
+    # 北京时间约 10:30 / 20:30，跟在 hermes 采集（每天 10:00 / 20:00 UTC+8）之后
+    - cron: "30 2,12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-snapshot
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Pull snapshot from Feishu
+        run: pnpm sync:snapshot
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
+          # FEISHU_TABLE_ID 走代码内默认值；换表时再加 secret 并在此注入
+
+      - name: Validate snapshot against tests
+        run: pnpm test
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet src/data/snapshot.json; then
+            echo "snapshot unchanged; skipping commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/snapshot.json
+          git commit -m "chore(data): sync snapshot from Feishu"
+          git push
