@@ -3,7 +3,7 @@ import { locales } from "@/i18n/locales";
 import { siteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths = ["", "/categories", "/about", "/contact", "/privacy", "/terms"];
+  const paths = ["", "/categories", "/archive", "/about", "/contact", "/privacy", "/terms"];
   return locales.flatMap((locale) =>
     paths.map((path) => ({
       url: `${siteUrl}/${locale}${path}`,

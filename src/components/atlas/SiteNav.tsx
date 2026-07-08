@@ -8,7 +8,7 @@ import { formatSnapshotAge } from "@/lib/snapshot/format";
 
 type SiteNavProps = {
   locale: Locale;
-  active: "discover" | "categories";
+  active: "discover" | "categories" | "archive";
   generatedAt?: string;
   isStale?: boolean;
 };
@@ -29,6 +29,9 @@ export function SiteNav({ locale, active, generatedAt, isStale = false }: SiteNa
         </Link>
         <Link className={active === "categories" ? "active" : ""} href={`/${locale}/categories`}>
           {text.nav[1]}
+        </Link>
+        <Link className={active === "archive" ? "active" : ""} href={`/${locale}/archive`}>
+          {text.nav[2]}
         </Link>
       </nav>
       <div className="nav-tools">

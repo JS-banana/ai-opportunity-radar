@@ -9,7 +9,7 @@ export type HeroChipKey = (typeof HERO_CHIP_KEYS)[number];
 export const copy = {
   en: {
     siteName: "AI Opportunity Atlas",
-    nav: ["Discover", "Categories"],
+    nav: ["Discover", "Categories", "Archive"],
     title: "Find AI opportunities before they close.",
     intro: "Curated hackathons, credits, grants, and events from trusted sources.",
     search: "Search hackathons, credits, grants...",
@@ -56,6 +56,12 @@ export const copy = {
     dataUpdated: "Data updated {age}",
     dataStale: "May be outdated",
     noResults: "No matching opportunities",
+    archive: {
+      title: "Archive",
+      intro: "Past opportunities kept for reference. Deadlines here have passed.",
+      count: "archived opportunities",
+      empty: "Nothing has expired yet.",
+    },
     detail: {
       discovery: "Discovery",
       officialEntry: "Official entry",
@@ -75,7 +81,7 @@ export const copy = {
   },
   zh: {
     siteName: "AI 活动雷达",
-    nav: ["发现", "分类"],
+    nav: ["发现", "分类", "归档"],
     title: "在时间截止前找到 AI 机会",
     intro: "精选黑客松、积分、资助、挑战和活动机会",
     search: "搜索黑客松、积分、资助...",
@@ -122,6 +128,12 @@ export const copy = {
     dataUpdated: "数据更新于 {age}",
     dataStale: "可能不是最新",
     noResults: "没有匹配的机会",
+    archive: {
+      title: "往期归档",
+      intro: "已过截止时间的活动机会存档，供回顾与参考。",
+      count: "条归档机会",
+      empty: "暂时没有过期的机会。",
+    },
     detail: {
       discovery: "发现",
       officialEntry: "官方入口",
