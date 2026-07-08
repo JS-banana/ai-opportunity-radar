@@ -36,6 +36,14 @@ _Avoid_: 人工置顶列表, CMS 推荐位
 一个顶层浏览界面，按用户目标组合机会类型、奖励、地区、形式等派生路径；不是每个标签一页的 SEO 分类站。
 _Avoid_: 标签详情页, 独立分类 CMS
 
+**往期归档**:
+按 `endAt` 派生的已过期机会列表（`/{locale}/archive`）；过期记录即使从 Feishu 清理也保留在快照中，只读回顾，不再更新。
+_Avoid_: 删除过期数据, 历史 CMS
+
+**入仓快照**:
+随仓库提交的 `src/data/snapshot.json`，由 GitHub Actions 定时从 Feishu 同步；是网站唯一运行时数据源，部署即数据更新。
+_Avoid_: Blob 缓存, 运行时拉取
+
 **真实数据验收**:
-用 live Feishu Base 跑通字段列表、分页记录、mapper、快照体积和跳转入口后，确认 seed 数据可以只作为开发 fallback。
+用 live Feishu Base 跑通字段列表、分页记录、mapper、快照体积和跳转入口；seed 数据只作为测试夹具（`tests/fixtures/seed.ts`），不参与运行时。
 _Avoid_: seed 数据验收, 静态演示数据

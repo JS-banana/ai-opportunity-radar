@@ -6,13 +6,15 @@ Curated AI hackathons, grants, credits and programs — before they close.
 
 ## What it is
 
-A read-only discovery site for AI-related activity opportunities: hackathons, API credits, grants, competitions, and benefit programs. Data is synced from Feishu Base into a public snapshot; registration and submissions happen on official pages.
+A read-only discovery site for AI-related activity opportunities: hackathons, API credits, grants, competitions, and benefit programs. Data is synced from Feishu Base into a snapshot committed to this repo; registration and submissions happen on official pages.
+
+Live: [https://airadar.laifuyou.com](https://airadar.laifuyou.com)
 
 ## Stack
 
 - Next.js 15 (App Router) + SSR for list/detail pages
 - Client-side search and filters on the discovery home
-- Feishu Base → snapshot → Vercel Blob (optional)
+- Feishu Base → GitHub Actions（每天两次）→ `src/data/snapshot.json` → git push 触发 Vercel 部署
 
 ## Development
 
@@ -21,7 +23,7 @@ pnpm install
 pnpm dev
 ```
 
-无 Feishu 凭证时，可先 `pnpm dump:snapshot -- --out tmp/snapshot.json` 生成本地快照，或依赖内置 seed 数据。
+数据直接来自仓库内 `src/data/snapshot.json`，本地开发无需任何凭证。需要手动刷新数据时，在 `.env` 配置 Feishu 凭证后执行 `pnpm sync:snapshot`。
 
 ```bash
 pnpm lint
