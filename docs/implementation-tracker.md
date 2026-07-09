@@ -35,6 +35,16 @@ ADRs 记录架构决策；本文只记录当前执行状态和下一步任务。
 2. 在 Vercel 移除旧的 `FEISHU_*` / `BLOB_READ_WRITE_TOKEN` / `SNAPSHOT_TTL_HOURS` 环境变量，删除 Blob Store。
 3. Search Console、生产 analytics 等 Phase 3 剩余上线项。
 4. 可选：首页筛选状态同步到 URL query。
+5. 数据运营：删除 Feishu Base 中 16 条跨源重复记录（清单见 2026-07-09 节）；修正 SpaceMind（`recvoPZdYvnizF`）报名入口为具体比赛页 URL（当前填门户首页，与星火杯撞去重键被隐藏）。
+6. 首页/归档「加载更多」渐进展示：活跃记录接近 ~120 条时做（不做无限滚动）；当前节奏预计 1-2 个月后到量。
+7. 快照体积：约 400 条时逼近 500KB 上限（当前 72 条 / 约 90KB），届时拆分归档快照或裁剪归档字段。
+
+## 2026-07-09 快照去重与展示修复
+
+- mapper 按归一化报名 URL 去重（保留 Base 先出现记录），快照 89 → 72 条，拦下 17 组跨源重复；`live-snapshot` 测试新增「报名 URL 全局唯一」断言，skippedCount 允许可解释少数。
+- enums 补 `内测体验` → beta-access；来源渠道改白名单展示，内部扫描标签（DDG_broad 等）不再泄漏到公开 UI。
+- skill 侧（jjk-skills 仓库 `bb016e0`）：`campaign_bitable_sync.py` 写入查重升级为 厂商|活动名 + 归一化报名 URL 双键硬闸门，防止复发。
+- 待删重复记录：`recvnC0LnZGSzP` `recvnC0M7Fn8XE` `recvnC0MPL5WoQ` `recvnC0Nuw6i1R` `recvnC0O5Y9Zd6` `recvnC0OX6DDSE` `recvoM8m5oGeXA` `recvoM8y37gDDT` `recvoM90SBFC1A` `recvoM91GJYknd` `recvoM92lZPDFi` `recvoM96ShVysX` `recvoM97wFmMWI` `recvoM98dxJWQe` `recvoM9aiJ0V3Q` `recvoM9b2Ivs06`（网站侧已被 mapper 屏蔽，删除仅为 Base 卫生与 skill 查重基数）。
 
 ## 2026-07-07 数据链路迁移（ADR 0018）
 
