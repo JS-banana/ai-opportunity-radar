@@ -14,6 +14,14 @@ import { siteUrl } from "@/lib/site";
 export const revalidate = 3600;
 export const dynamicParams = true;
 
+export async function generateStaticParams() {
+  const { snapshot } = await getSnapshot();
+  return snapshot.opportunities.map((item) => ({
+    recordId: item.id,
+    slug: item.slug ? [item.slug] : undefined,
+  }));
+}
+
 type Props = {
   params: Promise<{ locale: string; recordId: string; slug?: string[] }>;
 };
