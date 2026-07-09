@@ -39,6 +39,12 @@ ADRs 记录架构决策；本文只记录当前执行状态和下一步任务。
 6. 首页/归档「加载更多」渐进展示：活跃记录接近 ~120 条时做（不做无限滚动）；当前节奏预计 1-2 个月后到量。
 7. 快照体积：约 400 条时逼近 500KB 上限（当前 72 条 / 约 90KB），届时拆分归档快照或裁剪归档字段。
 
+## 2026-07-09 全站静态化（SSG + ISR）
+
+- `[locale]` layout 加 `generateStaticParams` + next-intl `setRequestLocale`（缺后者会把整棵 locale 树拖成动态 SSR——全站 x-vercel-cache MISS 的根因）；详情页按快照记录预生成 144 条路径。
+- 页面保留 revalidate（首页/分类 300s、归档/详情 3600s），时间派生数据（即将截止/归档分桶）最多 5 分钟后台刷新；`/go` 保持 force-dynamic。
+- 生产实测：部署后 PRERENDER → HIT，边缘缓存按 ISR 周期工作；域名侧 Cloudflare 仅做 DNS（灰云），CDN 由 Vercel Edge Network 承担，勿叠加橙云代理。
+
 ## 2026-07-09 快照去重与展示修复
 
 - mapper 按归一化报名 URL 去重（保留 Base 先出现记录），快照 89 → 72 条，拦下 17 组跨源重复；`live-snapshot` 测试新增「报名 URL 全局唯一」断言，skippedCount 允许可解释少数。
