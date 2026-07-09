@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-08T14:45:37.500Z",
-  "recordCount": 87,
+  "generatedAt": "2026-07-09T06:25:17.816Z",
+  "recordCount": 89,
   "skippedCount": 0,
   "opportunities": [
     {
@@ -2468,6 +2468,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-07-08T12:05:49.671Z",
       "slug": "2026-25"
+    },
+    {
+      "id": "recvoPZaGXmnhw",
+      "title": "首届超级智能体大赛 2026 Super Agent — 9大行业智能体落地 产业资源包扶持",
+      "vendor": "广州市AI产业办",
+      "type": "dev-challenge",
+      "score": 4,
+      "difficulty": 5,
+      "difficultyNote": "需要可落地的行业智能体方案，涵盖医疗/养老/教育/文化/城市治理/制造/商贸/旅游/交通9大领域",
+      "rewardSummary": "产业资源包（算力/数据/专家赋能/产业基金引导/应用场景开放），非纯现金奖金",
+      "rewardDetail": "产业资源包（算力/数据/专家赋能/产业基金引导/应用场景开放），非纯现金奖金",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "线上报名+线下决赛",
+      "participation": "广智能产业服务平台报名，截止7月31日",
+      "winningCriteria": null,
+      "timelineNotes": "6/18启动，7/31截止报名，8-11月百强突围+主题竞赛，11月下旬决赛",
+      "startAt": "2026-07-08T16:00:00.000Z",
+      "endAt": "2026-07-31T15:59:59.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://www.gz.gov.cn/zwfw/zxfw/kjcy/content/post_10862954.html",
+      "sourceChannel": "broad_zh",
+      "estimatedEffort": "1月+",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-07-09T02:04:21.390Z",
+      "slug": "2026-super-agent-9"
+    },
+    {
+      "id": "recvoPZdYvnizF",
+      "title": "SpaceMind AI Agent 创新应用大赛 — $18K奖金池 智慧空间Agent开发",
+      "vendor": "科大讯飞",
+      "type": "dev-challenge",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "基于讯飞星辰Agent平台+SpaceMind架构开发智慧空间应用",
+      "rewardSummary": "总奖金池$18K(1.8万美元)，另享MaaS平台礼品卡及免费Token额度",
+      "rewardDetail": "总奖金池$18K(1.8万美元)，另享MaaS平台礼品卡及免费Token额度",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "challenge.xfyun.cn报名，居家控制/老人关怀/儿童陪伴/能源管理/安全守护等方向",
+      "winningCriteria": null,
+      "timelineNotes": "截止8月14日，基于SpaceMind架构开发家庭空间智能Agent",
+      "startAt": "2026-07-08T16:00:00.000Z",
+      "endAt": "2026-08-14T15:59:59.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://challenge.xfyun.cn/",
+      "sourceChannel": "broad_zh",
+      "estimatedEffort": "1-2周",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-07-09T02:04:34.276Z",
+      "slug": "spacemind-ai-agent-18k-agent"
     }
   ]
 }
