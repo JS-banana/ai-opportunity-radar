@@ -90,5 +90,16 @@
       "发现日期": 1782016515866,
       "状态": "新发现"
     }
+  },
+  {
+    "record_id": "rec_dup_url",
+    "fields": {
+      "活动名称": "AI Hackathon Genesis S1（重复来源）",
+      "厂商": "Bitget + Partner",
+      "活动类型": "Hackathon",
+      "报名入口": "https://example.com/bitget-hackathon/",
+      "截止时间": 1785427200000,
+      "状态": "新发现"
+    }
   }
 ]

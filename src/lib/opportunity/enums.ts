@@ -88,6 +88,7 @@ const typeSource: Record<string, OpportunityType> = {
   AI竞赛: "ai-competition",
   AI比赛: "ai-competition",
   内测资格: "beta-access",
+  内测体验: "beta-access",
   beta: "beta-access",
   权益: "benefit",
   福利: "benefit",

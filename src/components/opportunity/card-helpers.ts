@@ -125,12 +125,56 @@ export function deadlineSort(item: ActivityOpportunity) {
   return new Date(item.endAt).getTime();
 }
 
-const PLACEHOLDER_SOURCE_CHANNELS = new Set(["其他", "other", "Other"]);
+// Public-facing channel names from the campaign-radar source registry. Internal
+// scan-run labels (DDG_broad, broad_en, web_search…) must never reach the UI.
+const PUBLIC_SOURCE_CHANNELS = new Map(
+  [
+    "官网",
+    "AgentDeadlines",
+    "Devpost",
+    "lablab.ai",
+    "DoraHacks",
+    "HuggingFace",
+    "V2EX",
+    "天池",
+    "CompeteHub",
+    "aihot.today",
+    "Kaggle",
+    "MLH",
+    "HackerNoon",
+    "ETHGlobal",
+    "Twitter",
+    "Reddit",
+    "Hacker News",
+    "活动行",
+    "SegmentFault",
+    "WayToAGI",
+    "GitHub",
+    "dev.events",
+    "Luma",
+    "Cerebral Valley",
+    "Devfolio",
+    "Unstop",
+    "AIcrowd",
+    "DataFountain",
+    "魔搭",
+  ].map((name) => [name.toLowerCase(), name] as const),
+);
+
+const SOURCE_CHANNEL_ALIASES: Record<string, string> = {
+  tianchi: "天池",
+};
+
+/** Whitelisted display name for the record's source channel, or null when internal/unknown. */
+export function publicSourceChannel(item: ActivityOpportunity): string | null {
+  const channel = item.sourceChannel?.trim();
+  if (!channel) return null;
+  const lower = channel.toLowerCase();
+  return SOURCE_CHANNEL_ALIASES[lower] ?? PUBLIC_SOURCE_CHANNELS.get(lower) ?? null;
+}
 
 export function sourceLabel(item: ActivityOpportunity) {
-  const channel = item.sourceChannel?.trim();
-  if (!channel || PLACEHOLDER_SOURCE_CHANNELS.has(channel)) return item.vendor;
-  return channel;
+  return publicSourceChannel(item) ?? item.vendor;
 }
 
 function normalizeLabel(value: string) {

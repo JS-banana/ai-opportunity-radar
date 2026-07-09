@@ -7,6 +7,7 @@ describe("live enum normalization", () => {
     expect(normalizeOpportunityType("开发者挑战赛")).toBe("dev-challenge");
     expect(normalizeOpportunityType("福利发放")).toBe("benefit");
     expect(normalizeOpportunityType("AI竞赛")).toBe("ai-competition");
+    expect(normalizeOpportunityType("内测体验")).toBe("beta-access");
   });
 
   it("maps Feishu reward types seen in production Base", () => {

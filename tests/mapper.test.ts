@@ -36,7 +36,18 @@ describe("mapRecordsToOpportunities", () => {
   });
 
   it("skips unsafe or owner-skipped records", () => {
-    expect(result.skippedCount).toBe(2);
-    expect(result.issues.filter((issue) => issue.severity === "skip").map((issue) => issue.recordId)).toEqual(["rec_bad_url", "rec_skipped"]);
+    expect(result.skippedCount).toBe(3);
+    expect(result.issues.filter((issue) => issue.severity === "skip").map((issue) => issue.recordId)).toEqual([
+      "rec_bad_url",
+      "rec_skipped",
+      "rec_dup_url",
+    ]);
+  });
+
+  it("keeps the first record when registration URLs collide across sources", () => {
+    expect(result.opportunities.some((item) => item.id === "rec_live_hackathon")).toBe(true);
+    expect(result.opportunities.some((item) => item.id === "rec_dup_url")).toBe(false);
+    const dup = result.issues.find((issue) => issue.recordId === "rec_dup_url" && issue.severity === "skip");
+    expect(dup?.reason).toContain("rec_live_hackathon");
   });
 });

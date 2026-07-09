@@ -53,10 +53,25 @@ export const criticalFeishuFields = [fields.title, fields.registrationUrl, field
 export function mapRecordsToOpportunities(records: FeishuRecord[], now = new Date()): MapperResult {
   const issues: MapperIssue[] = [];
   const opportunities: ActivityOpportunity[] = [];
+  const seenUrls = new Map<string, string>();
 
   for (const record of records) {
     const mapped = mapRecord(record, issues, now);
-    if (mapped) opportunities.push(mapped);
+    if (!mapped) continue;
+    // Cross-aggregator duplicates land as separate Base records pointing at the same entry URL.
+    const key = registrationUrlKey(mapped.registrationUrl);
+    const firstId = seenUrls.get(key);
+    if (firstId) {
+      issues.push({
+        recordId: record.record_id,
+        field: fields.registrationUrl,
+        reason: `duplicate registration URL of ${firstId}`,
+        severity: "skip",
+      });
+      continue;
+    }
+    seenUrls.set(key, mapped.id);
+    opportunities.push(mapped);
   }
 
   return {
@@ -133,6 +148,11 @@ function parseScore(value: string | null, recordId: string, issues: MapperIssue[
   if (score >= 1 && score <= 5) return score as 1 | 2 | 3 | 4 | 5;
   issues.push({ recordId, field: fields.score, reason: "invalid score, defaulted to 3", severity: "warn" });
   return 3;
+}
+
+function registrationUrlKey(value: string) {
+  const parsed = new URL(value);
+  return `${parsed.host.toLowerCase()}${parsed.pathname.replace(/\/+$/, "")}${parsed.search}`;
 }
 
 function summary(value: string | null) {

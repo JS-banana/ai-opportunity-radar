@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DetailDeadlineFact, DetailSectionBody, OfficialStatusBadge, StarRating } from "@/components/opportunity/DetailWidgets";
+import { publicSourceChannel } from "@/components/opportunity/card-helpers";
 import { copy } from "@/content/atlas-copy";
 import { isLocale, type Locale } from "@/i18n/locales";
 import { detailPath, formatDate, getPublicStatus, publicStatusLabel, shouldEmitEventJsonLd } from "@/lib/opportunity/derive";
@@ -111,7 +112,7 @@ export default async function OpportunityDetail({ params }: Props) {
         <DetailSection title={detail.timeline} content={opportunity.timelineNotes} locale={locale} />
         <footer className="detail-footer">
           <span>
-            {detail.source}: {opportunity.sourceChannel ?? detail.maintainedRecord}
+            {detail.source}: {publicSourceChannel(opportunity) ?? detail.maintainedRecord}
           </span>
           <span>
             {detail.discovered}: {formatDate(opportunity.discoveredAt, locale)}

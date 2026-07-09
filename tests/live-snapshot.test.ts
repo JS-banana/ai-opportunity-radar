@@ -12,8 +12,17 @@ describe("bundled snapshot integration", () => {
   it("matches the snapshot contract", () => {
     expect(snapshot.schemaVersion).toBe(1);
     expect(snapshot.recordCount).toBe(snapshot.opportunities.length);
-    expect(snapshot.skippedCount).toBe(0);
+    // Skips are explainable (cross-source duplicates, owner-skipped records) but must stay a minority.
+    expect(snapshot.skippedCount).toBeLessThan(snapshot.recordCount * 0.5);
     expect(snapshot.opportunities.length).toBeGreaterThanOrEqual(50);
+  });
+
+  it("keeps registration URLs unique across records", () => {
+    const keys = snapshot.opportunities.map((item) => {
+      const url = new URL(item.registrationUrl);
+      return `${url.host.toLowerCase()}${url.pathname.replace(/\/+$/, "")}${url.search}`;
+    });
+    expect(new Set(keys).size).toBe(keys.length);
   });
 
   it("resolves outbound URLs only by record id", () => {
