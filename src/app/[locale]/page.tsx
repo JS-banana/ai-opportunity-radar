@@ -8,8 +8,6 @@ import { detailPath } from "@/lib/opportunity/derive";
 import { getActiveOpportunities } from "@/lib/page-data/getActiveOpportunities";
 import { siteUrl } from "@/lib/site";
 
-export const revalidate = 300;
-
 type Props = {
   params: Promise<{ locale: string }>;
 };

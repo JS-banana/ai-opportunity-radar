@@ -6,8 +6,6 @@ import { isLocale, type Locale } from "@/i18n/locales";
 import { getActiveOpportunities } from "@/lib/page-data/getActiveOpportunities";
 import { siteUrl } from "@/lib/site";
 
-export const revalidate = 300;
-
 type Props = {
   params: Promise<{ locale: string }>;
 };

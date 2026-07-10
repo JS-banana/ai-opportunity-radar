@@ -28,3 +28,7 @@ tmp/
 coverage/
 .vercel
 .env*
+
+# cloudflare
+.open-next/
+.wrangler/

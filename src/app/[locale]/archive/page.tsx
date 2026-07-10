@@ -8,8 +8,6 @@ import { getDeadlineBucket } from "@/lib/opportunity/derive";
 import { getSnapshot } from "@/lib/snapshot/get";
 import { siteUrl } from "@/lib/site";
 
-export const revalidate = 3600;
-
 type Props = {
   params: Promise<{ locale: string }>;
 };
