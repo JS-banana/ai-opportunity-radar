@@ -8,7 +8,7 @@
 - 当前实施状态：[`docs/implementation-tracker.md`](./docs/implementation-tracker.md)
 - 架构决策：[`docs/adr/`](./docs/adr/)（数据链路以 ADR 0018 为准）
 - 视觉参考：[`docs/design/README.md`](./docs/design/README.md)
-- Vercel 部署：[`docs/vercel-deploy.md`](./docs/vercel-deploy.md)
+- 部署：[`docs/cloudflare-deploy.md`](./docs/cloudflare-deploy.md)（生产，Cloudflare Workers）；[`docs/vercel-deploy.md`](./docs/vercel-deploy.md) 仅作回滚参考
 
 ## 工作规则
 
@@ -34,7 +34,7 @@
 ### 数据链路
 
 - 快照随仓库提交：`src/data/snapshot.json`，运行时静态 import，不依赖 Feishu / Blob（ADR 0018）。
-- 同步：GitHub Actions `.github/workflows/sync-snapshot.yml` 每天两次全量拉取 Feishu 并提交；push 触发 Vercel 部署即完成数据更新。Secrets：`FEISHU_APP_ID` / `FEISHU_APP_SECRET` / `FEISHU_APP_TOKEN`。
+- 同步：GitHub Actions `.github/workflows/sync-snapshot.yml` 每天两次全量拉取 Feishu 并提交；push 触发 `.github/workflows/deploy.yml` 部署到 Cloudflare Workers 即完成数据更新。Secrets：`FEISHU_APP_ID` / `FEISHU_APP_SECRET` / `FEISHU_APP_TOKEN` / `CLOUDFLARE_API_TOKEN`。
 - 本地手动同步：`pnpm sync:snapshot`（需 `.env` Feishu 凭证）；无凭证开发直接用仓库内快照。
 - 归档合并：已过期记录即使从 Feishu 删除也保留在快照中；未过期却消失的记录视为人工删除、不保留。
 
@@ -42,7 +42,7 @@
 
 - Phase 0/1（live 数据 + 核心产品链路）：已完成。
 - Phase 2（SEO / 双语）：进行中。
-- Phase 3（上线）：生产已部署，正式域名 https://airadar.laifuyou.com ；待 Search Console、生产 analytics。Vercel 无需任何数据类环境变量。
+- Phase 3（上线）：生产部署在 Cloudflare Workers（`airadar`，OpenNext 适配器，纯 SSG 无 ISR），正式域名 https://airadar.laifuyou.com ；待 Search Console、生产 analytics（可用 Cloudflare Web Analytics）。无需任何数据类环境变量；旧 Vercel 项目保留作回滚。
 
 ## Commands
 

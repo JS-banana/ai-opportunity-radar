@@ -8,7 +8,7 @@ ADRs 记录架构决策；本文只记录当前执行状态和下一步任务。
 - UI：已接受的高保真方向以 `docs/design/references/v2-*.png` 为准；自有 React 组件 + 全局 CSS，Tailwind v4 只作为可用基础。
 - 数据：Feishu Base 是数据源；快照随仓库提交（`src/data/snapshot.json`，静态 import），由 GitHub Actions 每天两次同步并提交，push 即触发 Vercel 部署（ADR 0018）。
 - 维护：Feishu/Base/hermes 负责采集、审核、维护；网站只读展示。
-- 生产：https://airadar.laifuyou.com （Vercel，无需数据类环境变量）。
+- 生产：https://airadar.laifuyou.com （Cloudflare Workers，无需数据类环境变量；详见 `docs/cloudflare-deploy.md`）。
 
 ## Current UI Status
 
@@ -38,6 +38,15 @@ ADRs 记录架构决策；本文只记录当前执行状态和下一步任务。
 5. 数据运营：删除 Feishu Base 中 16 条跨源重复记录（清单见 2026-07-09 节）；修正 SpaceMind（`recvoPZdYvnizF`）报名入口为具体比赛页 URL（当前填门户首页，与星火杯撞去重键被隐藏）。
 6. 首页/归档「加载更多」渐进展示：活跃记录接近 ~120 条时做（不做无限滚动）；当前节奏预计 1-2 个月后到量。
 7. 快照体积：约 400 条时逼近 500KB 上限（当前 72 条 / 约 90KB），届时拆分归档快照或裁剪归档字段。
+
+## 2026-07-10 部署迁移 Vercel → Cloudflare Workers
+
+- 动机：Cloudflare 免费版静态请求/带宽不限量、无 Vercel Hobby 100GB 硬上限与非商业条款风险（AdSense 合规）；国内访问两家同档（均绕美西），迁移不为提速。
+- 接入 `@opennextjs/cloudflare`（`wrangler.jsonc` + `open-next.config.ts`，staticAssetsIncrementalCache）；删除 4 个页面的 `revalidate`，全站纯 SSG，仅 `/go` 走 Worker（免费 10 万次/天）；移除 `@vercel/analytics`。
+- 部署：`.github/workflows/deploy.yml` push 自动部署（secret `CLOUDFLARE_API_TOKEN`）；本地 `pnpm deploy` / `pnpm preview`。Worker 包 gzip ~1.9MB（免费限 3MB）。
+- 域名：`airadar.laifuyou.com` 绑为 Workers Custom Domain（面板操作，覆盖原指向 Vercel 的 CNAME）；Vercel 项目保留作回滚（回滚方式见 `docs/cloudflare-deploy.md`）。
+- 验收：lint / 28 test / typecheck / build 全过；本地 workerd 预览与线上（美国节点 + 国内直连）实测 `/`→307、双语首页/分类/归档/详情 200、`/go` 302 到官方 URL、sitemap/robots 200；响应头 `server: cloudflare` 确认流量已切换。
+- 待办：Cloudflare Web Analytics 接入（面板一键）；观察 CI 部署首跑；稳定后可删 Vercel 项目。
 
 ## 2026-07-09 全站静态化（SSG + ISR）
 
