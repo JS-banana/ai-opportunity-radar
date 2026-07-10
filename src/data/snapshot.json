@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-10T06:24:09.490Z",
-  "recordCount": 78,
+  "generatedAt": "2026-07-10T15:08:33.181Z",
+  "recordCount": 79,
   "skippedCount": 1,
   "opportunities": [
     {
@@ -2215,6 +2215,34 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-07-08T16:00:00.000Z",
       "slug": "volthacks-iot-ai-hackathon"
+    },
+    {
+      "id": "recvoXp2rv3ZqY",
+      "title": "小程序成长计划 AI Inspire Plan（二期）",
+      "vendor": "微信",
+      "type": "benefit",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需有微信小程序+云开发环境，适合已有小程序的开发者",
+      "rewardSummary": "二期(2026.7-12): 10亿混元Token + 10万张混元生图额度，6个月有效；含混元hy3文本模型+HY-Image-3.0生图模型",
+      "rewardDetail": "二期(2026.7-12): 10亿混元Token + 10万张混元生图额度，6个月有效；含混元hy3文本模型+HY-Image-3.0生图模型",
+      "rewardTypes": [
+        "api-credits"
+      ],
+      "format": "线上",
+      "participation": "微信公众平台报名，小程序+云开发环境",
+      "winningCriteria": null,
+      "timelineNotes": "二期 2026-07-01 ~ 2026-12-31，存量一期用户自动补发",
+      "startAt": "2026-07-09T16:00:00.000Z",
+      "endAt": "2025-12-31T16:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://developers.weixin.qq.com/miniprogram/dev/wxcloudservice/wxcloud/billing/ai-inspire-plan.html",
+      "sourceChannel": "官方文档",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-07-10T08:31:00.570Z",
+      "slug": "ai-inspire-plan"
     }
   ]
 }
