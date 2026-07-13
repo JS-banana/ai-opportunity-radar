@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-12T14:00:47.133Z",
-  "recordCount": 79,
+  "generatedAt": "2026-07-13T05:51:14.695Z",
+  "recordCount": 80,
   "skippedCount": 1,
   "opportunities": [
     {
@@ -2243,6 +2243,34 @@
       "suggestion": "watch",
       "discoveredAt": "2026-07-10T08:31:00.570Z",
       "slug": "ai-inspire-plan"
+    },
+    {
+      "id": "recvpdnINHvJxx",
+      "title": "Flare Summer Signal — Blockchain+AI Hackathon $12K",
+      "vendor": "Flare",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需要Flare区块链开发经验，EVM兼容，需理解跨链互操作和机密计算",
+      "rewardSummary": "$12K总奖金池：Interoperable Asset Products赛道$6K（1st $4K, 2nd $2K）+ Confidential Compu",
+      "rewardDetail": "$12K总奖金池：Interoperable Asset Products赛道$6K（1st $4K, 2nd $2K）+ Confidential Compute Apps赛道$6K（1st $4K, 2nd $2K）",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上Virtual",
+      "participation": "DoraHacks平台注册+提交",
+      "winningCriteria": null,
+      "timelineNotes": null,
+      "startAt": "2026-07-12T16:00:00.000Z",
+      "endAt": "2026-08-14T11:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/flaresummersignal",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-07-13T02:06:07.280Z",
+      "slug": "flare-summer-signal-blockchain-ai-hackathon-12k"
     }
   ]
 }
