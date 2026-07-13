@@ -9,6 +9,7 @@ import {
 } from "./enums";
 import { makeSlug } from "./derive";
 import { ActivityOpportunitySchema, type ActivityOpportunity } from "./model";
+import { normalizePublicSourceChannel } from "./source-channel";
 
 export type MapperIssue = {
   recordId: string;
@@ -125,7 +126,7 @@ function mapRecord(record: FeishuRecord, issues: MapperIssue[], now: Date): Acti
     region: normalizeRegion(text(record.fields[fields.region])),
     officialStatus: normalizeOfficialStatus(text(record.fields[fields.officialStatus])),
     registrationUrl,
-    sourceChannel: text(record.fields[fields.sourceChannel]),
+    sourceChannel: normalizePublicSourceChannel(text(record.fields[fields.sourceChannel])),
     estimatedEffort: text(record.fields[fields.estimatedEffort]),
     suggestion: normalizeSuggestion(text(record.fields[fields.suggestion])),
     discoveredAt,

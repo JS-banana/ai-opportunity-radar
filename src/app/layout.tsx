@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Opportunity Atlas",
+  title: "AI Opportunity Radar",
   description: "Curated AI events, programming challenges, hackathons, credits, benefits, and submission opportunities.",
 };
 

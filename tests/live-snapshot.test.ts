@@ -25,10 +25,19 @@ describe("bundled snapshot integration", () => {
     expect(new Set(keys).size).toBe(keys.length);
   });
 
-  it("resolves outbound URLs only by record id", () => {
+  it("keeps every registration URL absolute https", () => {
     for (const item of snapshot.opportunities) {
+      expect(item.registrationUrl).toMatch(/^https:\/\//i);
       expect(registrationUrlFor(snapshot, item.id)).toBe(item.registrationUrl);
-      expect(registrationUrlFor(snapshot, "https://evil.example")).toBeNull();
+    }
+    expect(registrationUrlFor(snapshot, "https://evil.example")).toBeNull();
+    expect(registrationUrlFor(snapshot, "missing")).toBeNull();
+  });
+
+  it("stores only public source channels in the snapshot", () => {
+    for (const item of snapshot.opportunities) {
+      if (item.sourceChannel == null) continue;
+      expect(item.sourceChannel).not.toMatch(/DDG|broad_|web_search/i);
     }
   });
 

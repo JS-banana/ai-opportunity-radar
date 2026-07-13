@@ -4,17 +4,17 @@
 
 Curated AI hackathons, grants, credits and programs — before they close.
 
+**Live:** [https://airadar.laifuyou.com](https://airadar.laifuyou.com)
+
 ## What it is
 
-A read-only discovery site for AI-related activity opportunities: hackathons, API credits, grants, competitions, and benefit programs. Data is synced from Feishu Base into a snapshot committed to this repo; registration and submissions happen on official pages.
-
-Live: [https://airadar.laifuyou.com](https://airadar.laifuyou.com)
+A read-only discovery site for AI-related activity opportunities: hackathons, API credits, grants, competitions, and benefit programs. Data is synced from Feishu Base into a snapshot committed to this repo; registration happens on official pages (opened in a new tab).
 
 ## Stack
 
-- Next.js 15 (App Router) + SSR for list/detail pages
-- Client-side search and filters on the discovery home
-- Feishu Base → GitHub Actions（每天两次）→ `src/data/snapshot.json` → git push 触发 Vercel 部署
+- Next.js 15 (App Router), fully static (SSG) via OpenNext
+- Cloudflare Workers (`airadar`) for production hosting
+- Feishu Base → GitHub Actions (twice daily) → `src/data/snapshot.json` → push triggers Workers deploy
 
 ## Development
 
@@ -23,7 +23,7 @@ pnpm install
 pnpm dev
 ```
 
-数据直接来自仓库内 `src/data/snapshot.json`，本地开发无需任何凭证。需要手动刷新数据时，在 `.env` 配置 Feishu 凭证后执行 `pnpm sync:snapshot`。
+Data comes from the committed `src/data/snapshot.json`; no credentials are required for local browsing. To refresh the snapshot manually, copy `.env.example` to `.env`, fill in Feishu credentials, then run `pnpm sync:snapshot`.
 
 ```bash
 pnpm lint

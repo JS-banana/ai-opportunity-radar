@@ -82,12 +82,6 @@ export function sortOpportunities(opportunities: ActivityOpportunity[], now = ne
   });
 }
 
-export function featuredOpportunities(opportunities: ActivityOpportunity[], limit = 3, now = new Date()) {
-  return sortOpportunities(opportunities, now)
-    .filter((item) => item.score >= 4 && item.officialStatus === "confirmed" && getDeadlineBucket(item.endAt, now) !== "expired")
-    .slice(0, limit);
-}
-
 export function detailPath(locale: Locale, opportunity: ActivityOpportunity) {
   const suffix = opportunity.slug ? `/${opportunity.slug}` : "";
   return `/${locale}/o/${opportunity.id}${suffix}`;

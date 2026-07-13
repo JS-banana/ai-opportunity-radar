@@ -17,6 +17,10 @@ build/
 # agent skill installs (compiled AGENTS.md bloats Cursor rules)
 .agents/
 
+# local-only maintainer docs and Cursor rules (not published)
+docs/
+.cursor/
+
 # editor / OS
 .DS_Store
 .idea/
@@ -28,6 +32,7 @@ tmp/
 coverage/
 .vercel
 .env*
+!.env.example
 
 # cloudflare
 .open-next/

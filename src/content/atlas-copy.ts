@@ -8,7 +8,7 @@ export type HeroChipKey = (typeof HERO_CHIP_KEYS)[number];
 
 export const copy = {
   en: {
-    siteName: "AI Opportunity Atlas",
+    siteName: "AI Opportunity Radar",
     nav: ["Discover", "Categories", "Archive"],
     title: "Find AI opportunities before they close.",
     intro: "Curated hackathons, credits, grants, and events from trusted sources.",

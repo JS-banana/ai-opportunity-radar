@@ -1,6 +1,6 @@
-# AI&编程活动应用
+# AI 活动雷达 · 领域词汇
 
-展示已整理的 AI、编程、黑客马拉松等活动机会，帮助用户发现可参与、可报名、可领取权益或可提交作品的机会。
+中文品牌「AI 活动雷达」；英文对外名 AI Opportunity Radar。展示已整理的 AI、编程、黑客马拉松等活动机会，帮助用户发现可参与、可报名、可领取权益或可提交作品的机会。生产站点：https://airadar.laifuyou.com 。
 
 ## Language
 
@@ -24,8 +24,8 @@ _Avoid_: CMS 文章, 活动新闻稿
 网站内部用于展示、筛选和排序活动机会的稳定数据形状，由 Feishu Base 字段映射而来。
 _Avoid_: Base 字段, 原始记录
 
-**已接受视觉复刻**:
-当前首页和分类页的设计方向，来源于 `docs/design/references/v2-*.png`，实现集中在 `src/components/discovery/` 与 `src/styles/atlas*.css`。
+**已接受视觉方向**:
+当前首页和分类页的设计方向，实现集中在 `src/components/discovery/` 与 `src/styles/atlas*.css`。本地维护者可另存设计参考于 `docs/design/references/`（不入仓）。
 _Avoid_: 临时样式, 占位首页
 
 **即将截止**:
@@ -41,9 +41,9 @@ _Avoid_: 标签详情页, 独立分类 CMS
 _Avoid_: 删除过期数据, 历史 CMS
 
 **入仓快照**:
-随仓库提交的 `src/data/snapshot.json`，由 GitHub Actions 定时从 Feishu 同步；是网站唯一运行时数据源，部署即数据更新。
+随仓库提交的 `src/data/snapshot.json`，由 GitHub Actions 定时从 Feishu 同步；是网站唯一运行时数据源。生产部署在 Cloudflare Workers，推送即部署、部署即数据更新。
 _Avoid_: Blob 缓存, 运行时拉取
 
-**真实数据验收**:
-用 live Feishu Base 跑通字段列表、分页记录、mapper、快照体积和跳转入口；seed 数据只作为测试夹具（`tests/fixtures/seed.ts`），不参与运行时。
+**快照回归**:
+用仓内快照与测试夹具校验 mapper、体积和报名入口；seed 数据只作为测试夹具（`tests/fixtures/seed.ts`），不参与运行时。
 _Avoid_: seed 数据验收, 静态演示数据

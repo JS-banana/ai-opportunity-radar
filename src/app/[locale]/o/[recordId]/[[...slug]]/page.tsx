@@ -71,7 +71,9 @@ export default async function OpportunityDetail({ params }: Props) {
       <nav className="detail-nav">
         <Link href={`/${locale}`}>{text.siteName}</Link>
         <Link href={`/${locale}`}>{detail.discovery}</Link>
-        <a href={`/go/${opportunity.id}`}>{detail.officialEntry}</a>
+        <a href={opportunity.registrationUrl} target="_blank" rel="noopener noreferrer">
+          {detail.officialEntry}
+        </a>
       </nav>
       <article className="detail-document">
         <div className="detail-kicker">
@@ -80,7 +82,12 @@ export default async function OpportunityDetail({ params }: Props) {
         <h1>{opportunity.title}</h1>
         <p className="detail-vendor">{opportunity.vendor}</p>
         <div className="detail-actions">
-          <a className="primary-button compact detail-outbound" href={`/go/${opportunity.id}`}>
+          <a
+            className="primary-button compact detail-outbound"
+            href={opportunity.registrationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {detail.enterOfficial}
           </a>
           <OfficialStatusBadge status={opportunity.officialStatus} locale={locale} />
