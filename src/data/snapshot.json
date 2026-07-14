@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T05:12:27.832Z",
-  "recordCount": 81,
+  "generatedAt": "2026-07-14T14:21:35.901Z",
+  "recordCount": 82,
   "skippedCount": 2,
   "opportunities": [
     {
@@ -2299,6 +2299,35 @@
       "suggestion": "act-now",
       "discoveredAt": "2026-07-14T02:04:51.515Z",
       "slug": "openai-build-week-100k-codex-gpt-5-6-hackathon"
+    },
+    {
+      "id": "recvplERvhGeT0",
+      "title": "WEEX AI Wars II: Rise of Intelligence — $200K USDT AI交易竞赛",
+      "vendor": "WEEX",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需构建AI交易策略，理解DeFi/期货API接入",
+      "rewardSummary": "Up to $200K USDT event rewards + 100M LLM tokens for AI strategy builders. DoraH",
+      "rewardDetail": "Up to $200K USDT event rewards + 100M LLM tokens for AI strategy builders. DoraHacks early bird $52K USDT pool.",
+      "rewardTypes": [
+        "cash",
+        "api-credits"
+      ],
+      "format": "线上",
+      "participation": "选择 Team AI 或 Team Human，注册后等待赛事启动",
+      "winningCriteria": "Team AI: 基于多维度交易表现评估(非单纯利润)。Team Human: 实盘期货排名",
+      "timelineNotes": "日期待公布(TBA)，Pre-registration 已开放。Team AI 需接入 WEEX API 构建自动交易策略。",
+      "startAt": "2026-07-13T16:00:00.000Z",
+      "endAt": null,
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/weex-ai-wars2/detail",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-07-14T12:04:24.494Z",
+      "slug": "weex-ai-wars-ii-rise-of-intelligence-200k-usdt-ai"
     }
   ]
 }
