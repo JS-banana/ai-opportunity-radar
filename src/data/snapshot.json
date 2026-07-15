@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-15T05:12:44.259Z",
-  "recordCount": 82,
+  "generatedAt": "2026-07-15T14:17:33.163Z",
+  "recordCount": 83,
   "skippedCount": 2,
   "opportunities": [
     {
@@ -2328,6 +2328,35 @@
       "suggestion": "watch",
       "discoveredAt": "2026-07-14T12:04:24.494Z",
       "slug": "weex-ai-wars-ii-rise-of-intelligence-200k-usdt-ai"
+    },
+    {
+      "id": "recvprvHcIuqVP",
+      "title": "BLI Legal Tech Hackathon 2 — $50K+ Bounties & Legal Tech Innovation",
+      "vendor": "Blockchain Legal Institute",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需要区块链+法律领域知识，适合有Web3开发经验的团队",
+      "rewardSummary": "$50K+ USD value in bounties, support, and promotion from top blockchain law firm",
+      "rewardDetail": "$50K+ USD value in bounties, support, and promotion from top blockchain law firms, angel investor pitching, international press",
+      "rewardTypes": [
+        "cash",
+        "other"
+      ],
+      "format": "线上",
+      "participation": "个人或团队，需在DoraHacks注册并提交项目",
+      "winningCriteria": null,
+      "timelineNotes": "May 15 - Oct 31 2026, submission deadline Oct 31. Judging Nov 5 - Dec 5, Awards Dec 12",
+      "startAt": "2026-07-14T16:00:00.000Z",
+      "endAt": "2026-10-31T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/legal-hack-2026/detail",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-07-15T12:05:37.610Z",
+      "slug": "bli-legal-tech-hackathon-2-50k-bounties-legal-tech-innovation"
     }
   ]
 }
