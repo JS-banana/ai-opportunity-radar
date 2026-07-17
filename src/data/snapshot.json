@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T14:30:08.298Z",
-  "recordCount": 83,
+  "generatedAt": "2026-07-17T05:25:28.971Z",
+  "recordCount": 84,
   "skippedCount": 5,
   "opportunities": [
     {
@@ -2357,6 +2357,34 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-07-15T12:05:37.610Z",
       "slug": "bli-legal-tech-hackathon-2-50k-bounties-legal-tech-innovation"
+    },
+    {
+      "id": "recvpALeA7d85c",
+      "title": "AMD AI DevMaster Hackathon — $30K 3赛道(Multimodal/Agentic/Physical AI)",
+      "vendor": "AMD",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "3个赛道可选: Multimodal AI / Agentic AI / Physical AI。需ROCm栈优化经验",
+      "rewardSummary": "$30K总奖金池: 每赛道1st=$5K, 2nd=$3.5K, 3rd=$1.5K(3赛道共$30K)。免费AMD Radeon GPU资源。需注册AMD A",
+      "rewardDetail": "$30K总奖金池: 每赛道1st=$5K, 2nd=$3.5K, 3rd=$1.5K(3赛道共$30K)。免费AMD Radeon GPU资源。需注册AMD AI Developer Program",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "在线全球竞赛",
+      "participation": "个人或3人团队, 需先注册AMD AI Developer Program",
+      "winningCriteria": "功能完整性+创新+AMD GPU/ROCm优化表现",
+      "timelineNotes": "注册开放: 2026-07-10 | 提交开放: 2026-07-15 | 截止: 2026-08-06 23:59 UTC+8",
+      "startAt": "2026-07-16T16:00:00.000Z",
+      "endAt": "2026-08-06T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://luma.com/amd-4dhi?utm_source=cyhf",
+      "sourceChannel": "HuggingFace",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-07-17T02:03:47.113Z",
+      "slug": "amd-ai-devmaster-hackathon-30k-3-multimodal-agentic-physical-ai"
     }
   ]
 }
