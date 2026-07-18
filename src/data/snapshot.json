@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T05:07:39.217Z",
-  "recordCount": 85,
+  "generatedAt": "2026-07-18T13:55:11.043Z",
+  "recordCount": 87,
   "skippedCount": 5,
   "opportunities": [
     {
@@ -2414,6 +2414,63 @@
       "suggestion": "watch",
       "discoveredAt": "2026-07-18T02:03:28.384Z",
       "slug": "2026-20-3-ai"
+    },
+    {
+      "id": "recvpJ2MJA4tpQ",
+      "title": "OKX AI Genesis Hackathon — $100K 8赛道 Agent Service Provider开发",
+      "vendor": "OKX",
+      "type": "dev-challenge",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "需在OKX.AI平台上构建并发布一个Agent Service Provider(ASP)，可为加密或非加密服务",
+      "rewardSummary": "总奖金$100K：Best Product $20K, Creative Genius $20K, Revenue Rocket $20K, Finance/S",
+      "rewardDetail": "总奖金$100K：Best Product $20K, Creative Genius $20K, Revenue Rocket $20K, Finance/Software/Lifestyle/Art各$7.5K, Social Buzz $10K",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "个人或团队，在OKX.AI发布ASP + 在X平台发帖(#OKXAI) + 提交Google表单",
+      "winningCriteria": "ASP通过OKX内部审核并上线、X帖子展示、按时提交",
+      "timelineNotes": "Registration Jul 2-Jul 28 (extended from Jul 17). Reward Announcement Jul 23.",
+      "startAt": "2026-07-17T16:00:00.000Z",
+      "endAt": "2026-07-27T23:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://www.hackquest.io/hackathons/OKXAI-Genesis-Hackathon",
+      "sourceChannel": "Twitter",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-07-18T12:03:41.587Z",
+      "slug": "okx-ai-genesis-hackathon-100k-8-agent-service-provider"
+    },
+    {
+      "id": "recvpJ2Pg1mU3Q",
+      "title": "Casper Agentic Buildathon 2026 Final Round — $150K Agentic AI+DeFi+RWA",
+      "vendor": "Casper Association",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 4,
+      "difficultyNote": "需在Casper Testnet上部署工作智能合约原型，开源GitHub仓库+Demo视频，Web3+AI Agent开发经验",
+      "rewardSummary": "总奖池$150K：现金$30K + x402生态积分$100K + 合作方实物奖励$20K",
+      "rewardDetail": "总奖池$150K：现金$30K + x402生态积分$100K + 合作方实物奖励$20K",
+      "rewardTypes": [
+        "cash",
+        "api-credits"
+      ],
+      "format": "线上",
+      "participation": "个人或团队，DoraHacks注册，在Casper Testnet部署智能合约",
+      "winningCriteria": "技术执行、创新性、AI/Agent系统集成、DeFi/RWA实用性、用户体验、上线部署计划",
+      "timelineNotes": "Final Round Jul 13-26. Winners announced end of July. Qualification Round (Jun 1-Jul 7) already completed; Final Round open to all with 48 current hackers.",
+      "startAt": "2026-07-17T16:00:00.000Z",
+      "endAt": "2026-07-26T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/casper-agentic-buildathon-finals/detail",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-2周",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-07-18T12:03:51.576Z",
+      "slug": "casper-agentic-buildathon-2026-final-round-150k-agentic-ai-defi-rwa"
     }
   ]
 }
