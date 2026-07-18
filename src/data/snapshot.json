@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T14:10:15.427Z",
-  "recordCount": 84,
+  "generatedAt": "2026-07-18T05:07:39.217Z",
+  "recordCount": 85,
   "skippedCount": 5,
   "opportunities": [
     {
@@ -2385,6 +2385,35 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-07-17T02:03:47.113Z",
       "slug": "amd-ai-devmaster-hackathon-30k-3-multimodal-agentic-physical-ai"
+    },
+    {
+      "id": "recvpGBG47L5jV",
+      "title": "2026欧莱雅第二届美妆科技黑客松 — ¥20万奖金池 3赛道(AI客服/内容可信/包容体验)",
+      "vendor": "欧莱雅(中国)",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需AI/多模态/Agent技术，面向高校学生，3个月开发周期",
+      "rewardSummary": "¥20万总奖金池(一等奖¥8万×1+二等奖¥3万×2+三等奖¥1万×3+单项奖¥5K×3+明日之星¥3K×5)+欧莱雅实习直通面试+证书+产品大礼包",
+      "rewardDetail": "¥20万总奖金池(一等奖¥8万×1+二等奖¥3万×2+三等奖¥1万×3+单项奖¥5K×3+明日之星¥3K×5)+欧莱雅实习直通面试+证书+产品大礼包",
+      "rewardTypes": [
+        "cash",
+        "other"
+      ],
+      "format": "线上",
+      "participation": "天池平台报名，需完成阿里云学生认证",
+      "winningCriteria": "AI+美妆创新方案，评委评审",
+      "timelineNotes": null,
+      "startAt": "2026-07-17T16:00:00.000Z",
+      "endAt": "2026-10-19T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tianchi.aliyun.com/competition/entrance/532503",
+      "sourceChannel": "天池",
+      "estimatedEffort": "1-2周",
+      "suggestion": "watch",
+      "discoveredAt": "2026-07-18T02:03:28.384Z",
+      "slug": "2026-20-3-ai"
     }
   ]
 }
