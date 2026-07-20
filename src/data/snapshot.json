@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-20T05:52:08.073Z",
-  "recordCount": 87,
+  "generatedAt": "2026-07-20T14:37:03.123Z",
+  "recordCount": 88,
   "skippedCount": 5,
   "opportunities": [
     {
@@ -2471,6 +2471,35 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-07-18T12:03:51.576Z",
       "slug": "casper-agentic-buildathon-2026-final-round-150k-agentic-ai-defi-rwa"
+    },
+    {
+      "id": "recvpUJN9kqsW7",
+      "title": "OPC 先锋创新挑战赛 — AI超级个体/初创团队Agent创业赛道",
+      "vendor": "阿里云",
+      "type": "dev-challenge",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "需要有AI Agent产品或MVP，适合已启动项目的开发者/团队",
+      "rewardSummary": "免费阿里云Credits + 直通OPC先锋总决赛 + 全栈技术支持/资源对接/导师辅导/商业化路径",
+      "rewardDetail": "免费阿里云Credits + 直通OPC先锋总决赛 + 全栈技术支持/资源对接/导师辅导/商业化路径",
+      "rewardTypes": [
+        "api-credits",
+        "other"
+      ],
+      "format": "线上提交项目+商业计划书",
+      "participation": "填写报名表单，提交项目信息、商业计划书及产品链接/Demo",
+      "winningCriteria": "Top 7团队直通OPC先锋总决赛，由阿里云专家×行业顾问×投资人联合评审",
+      "timelineNotes": "初赛截止2026-08-10，23天后",
+      "startAt": "2026-07-19T16:00:00.000Z",
+      "endAt": "2026-08-10T15:59:59.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tianchi.aliyun.com/competition/entrance/532502",
+      "sourceChannel": "天池",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-07-20T12:03:30.700Z",
+      "slug": "opc-ai-agent"
     }
   ]
 }
