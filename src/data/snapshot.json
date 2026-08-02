@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T05:39:46.913Z",
-  "recordCount": 98,
-  "skippedCount": 5,
+  "generatedAt": "2026-08-02T14:05:40.061Z",
+  "recordCount": 100,
+  "skippedCount": 7,
   "opportunities": [
     {
       "id": "recvn947P1uKeP",
@@ -2783,6 +2783,62 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-07-30T16:00:00.000Z",
       "slug": "goai"
+    },
+    {
+      "id": "recvr8MLIgmYzs",
+      "title": "Wearable AI Grand Challenge(ECCV 2026) — $21K 可穿戴AI三大挑战",
+      "vendor": "Meta Reality Labs",
+      "type": "ai-competition",
+      "score": 4,
+      "difficulty": 4,
+      "difficultyNote": "研究者/多模态LLM方向：egocentric视频、主动AI、流式多轮对话、长视频QA；需表单注册拿Participant Toolkit",
+      "rewardSummary": "$21,000 现金总池，三个挑战(Proactive AI / Multi-turn Conversations / Long Video Q&A)，35K+",
+      "rewardDetail": "$21,000 现金总池，三个挑战(Proactive AI / Multi-turn Conversations / Long Video Q&A)，35K+视频新数据集，HF Leaderboard实时排名",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上提交(HuggingFace Leaderboard) + ECCV 2026线下研讨会(瑞典Malmö 9/8-9)",
+      "participation": "Google表单注册→下载数据集→提交predictions.jsonl；Validation阶段8/7截止，Test阶段8/15截止",
+      "winningCriteria": "排行榜+可复现开源结果",
+      "timelineNotes": null,
+      "startAt": "2026-08-01T16:00:00.000Z",
+      "endAt": "2026-08-15T15:59:59.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://wearable-ai-workshop.github.io/",
+      "sourceChannel": "AgentDeadlines",
+      "estimatedEffort": "2周以上",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-02T12:12:01.881Z",
+      "slug": "wearable-ai-grand-challenge-eccv-2026-21k-ai"
+    },
+    {
+      "id": "recvr8MNrXoHnT",
+      "title": "CALL-E: Your Code Is Calling — $10K AI电话Agent开发赛",
+      "vendor": "CALL-E",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "用 CALL-E SDK/API/MCP 构建能真实拨打电话完成任务(客户外联/预约/线索筛选/客服)的AI Agent；新账号送20次免费通话，可申请200次额外配额",
+      "rewardSummary": "$10,000 奖金池 + 最有价值反馈奖；新平台早期塑造机会",
+      "rewardDetail": "$10,000 奖金池 + 最有价值反馈奖；新平台早期塑造机会",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上(Devpost)",
+      "participation": "Devpost注册→构建应用→向CALL-E公开repo提交PR→提交表单",
+      "winningCriteria": "评委评选(实用性/创新/技术实现)",
+      "timelineNotes": null,
+      "startAt": "2026-08-01T16:00:00.000Z",
+      "endAt": "2026-09-14T15:59:59.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://call-e.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-02T12:12:08.746Z",
+      "slug": "call-e-your-code-is-calling-10k-ai-agent"
     }
   ]
 }
