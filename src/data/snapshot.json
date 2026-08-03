@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T05:55:21.826Z",
-  "recordCount": 101,
+  "generatedAt": "2026-08-03T15:23:02.849Z",
+  "recordCount": 103,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -1148,32 +1148,31 @@
     },
     {
       "id": "recvnVXpSxir2F",
-      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026 @ API World",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026 — $40,500现金",
       "vendor": "DevNetwork",
       "type": "hackathon",
-      "score": 3,
-      "difficulty": 3,
-      "difficultyNote": "Open to all countries, API/Cloud/AI/IoT challenge tracks, hybrid event co-located with API World 2026",
-      "rewardSummary": "13 non-cash prizes (sponsor-provided, API credits/swag等)",
-      "rewardDetail": "13 non-cash prizes (sponsor-provided, API credits/swag等)",
+      "score": 4,
+      "difficulty": 2,
+      "difficultyNote": "18岁以上，全球可参与；线上(8/17-9/3)或Santa Clara线下+颁奖(9/2-3)",
+      "rewardSummary": "$40,500现金：总冠军$12,500 + Perfect Corp $2,500 + Foxit/Apptio/Impart等$1K赛道；另有DevNetw",
+      "rewardDetail": "$40,500现金：总冠军$12,500 + Perfect Corp $2,500 + Foxit/Apptio/Impart等$1K赛道；另有DevNetwork 2027全会议通票与Amazon Echo。详情见 https://api-cloud-ai-hackathon-2026.devpost.com",
       "rewardTypes": [
-        "physical",
-        "other"
+        "cash"
       ],
-      "format": "线上+线下",
-      "participation": "Register on Devpost, join solo or team, submit project Aug 17-Sep 3",
-      "winningCriteria": "项目评审：API+Cloud+AI集成",
+      "format": "线上Hackathon(8/17-9/3)+Santa Clara线下(9/2-3)颁奖，397人已注册",
+      "participation": "Devpost页面注册，报名已开放",
+      "winningCriteria": "评审标准：进展/概念/可行性",
       "timelineNotes": "截止时间待确认",
       "startAt": "2026-06-28T16:00:00.000Z",
-      "endAt": "2026-09-04T06:59:59.000Z",
+      "endAt": "2026-09-01T16:00:00.000Z",
       "region": "global",
       "officialStatus": "confirmed",
       "registrationUrl": "https://api-cloud-ai-hackathon-2026.devpost.com/",
       "sourceChannel": "Devpost",
       "estimatedEffort": "1-3天",
-      "suggestion": "watch",
+      "suggestion": "worth-doing",
       "discoveredAt": "2026-06-29T12:06:08.179Z",
-      "slug": "devnetwork-api-cloud-ai-hackathon-2026-api-world"
+      "slug": "devnetwork-api-cloud-ai-hackathon-2026-40-500"
     },
     {
       "id": "recvnZnozBlPrZ",
@@ -2867,6 +2866,63 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-03T02:15:51.146Z",
       "slug": "behavior-challenge-2026-11k"
+    },
+    {
+      "id": "recvreDiB17yty",
+      "title": "2026全球人工智能创新创业大赛 GAIIEC — ¥30万奖金+杭州千万级扶持",
+      "vendor": "中国人工智能学会(CAAI)",
+      "type": "ai-competition",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "需完整创新成果+商业计划书；初创组年营收/融资≤1000万元，团队/初创公司均可",
+      "rewardSummary": "总奖金30万元(14席，初创/成长组各一等5万/二等3万/三等1万)；余杭区配套：最高600万研发补助、150万租金补助、500万贷款贴息、1000万天使引导基",
+      "rewardDetail": "总奖金30万元(14席，初创/成长组各一等5万/二等3万/三等1万)；余杭区配套：最高600万研发补助、150万租金补助、500万贷款贴息、1000万天使引导基金、算力券/模型券等；CAAI+启迪之星孵化赋能。详情见 https://www.caai.cn/site/content/8473.html",
+      "rewardTypes": [
+        "cash",
+        "other"
+      ],
+      "format": "线上海选→复赛路演→总决赛(2026-10-10杭州未来科技城)",
+      "participation": "官网 gaiiec.caai.cn 注册报名，全球团队可申报(优先海外项目)",
+      "winningCriteria": "项目海选晋级后路演答辩，按组别评奖",
+      "timelineNotes": "项目招募7月中旬-8月底；复赛9月初；总决赛2026-10-10",
+      "startAt": "2026-08-02T16:00:00.000Z",
+      "endAt": "2026-08-30T16:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://gaiiec.caai.cn/",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-03T12:12:02.558Z",
+      "slug": "2026-gaiiec-30"
+    },
+    {
+      "id": "recvreDkMmgHJb",
+      "title": "Agents for Impact 2026/2027 — 社会影响AI Agent多阶段大赛",
+      "vendor": "Google Cloud",
+      "type": "dev-challenge",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "Phase I 线下Hackathon(2026 Q4多城市)；Phase II Digital AI Arena(2027-01)；Phase III 线上数字Hackathon(2027-01~03，滚动提交)",
+      "rewardSummary": "Phase III 线上提交agentic AI解决方案，现金奖励+Next'27上台机会；具体金额未公布",
+      "rewardDetail": "Phase III 线上提交agentic AI解决方案，现金奖励+Next'27上台机会；具体金额未公布",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "多阶段：线下1日Hackathon→线上Shark Tank式路演→线上数字Hackathon",
+      "participation": "官网登记关注，2027年1月Phase III开放线上提交",
+      "winningCriteria": "按社会影响力主题(食物公平/公共卫生/应急疏散等)方案评审+观众投票",
+      "timelineNotes": "Phase I: 2026-10~12；Phase III: 2027-01~03",
+      "startAt": "2026-08-02T16:00:00.000Z",
+      "endAt": "2027-03-30T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://cloud.google.com/resources/agents-for-impact-2026",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-03T12:12:11.619Z",
+      "slug": "agents-for-impact-2026-2027-ai-agent"
     }
   ]
 }
