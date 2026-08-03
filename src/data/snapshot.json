@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T14:05:40.061Z",
-  "recordCount": 100,
-  "skippedCount": 7,
+  "generatedAt": "2026-08-03T05:55:21.826Z",
+  "recordCount": 101,
+  "skippedCount": 10,
   "opportunities": [
     {
       "id": "recvn947P1uKeP",
@@ -2839,6 +2839,34 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-02T12:12:08.746Z",
       "slug": "call-e-your-code-is-calling-10k-ai-agent"
+    },
+    {
+      "id": "recvrcdcJrRuMD",
+      "title": "BEHAVIOR Challenge 2026 — $11K 具身智能家庭任务仿真",
+      "vendor": "Stanford",
+      "type": "ai-competition",
+      "score": 4,
+      "difficulty": 5,
+      "difficultyNote": "具身智能/机器人仿真方向，BEHAVIOR-100 全长度家庭任务（长时程推理/导航/双臂操作），需 embodied AI 经验",
+      "rewardSummary": "$11,000 现金池；仿真环境 BEHAVIOR-100，100个家庭任务；Oct 16 截止",
+      "rewardDetail": "$11,000 现金池；仿真环境 BEHAVIOR-100，100个家庭任务；Oct 16 截止",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上，全球",
+      "participation": "官网报名（behavior.stanford.edu/challenge）",
+      "winningCriteria": "仿真任务完成率评分",
+      "timelineNotes": null,
+      "startAt": "2026-08-02T16:00:00.000Z",
+      "endAt": "2026-10-15T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://behavior.stanford.edu/challenge/index.html",
+      "sourceChannel": "AgentDeadlines",
+      "estimatedEffort": "1周+",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-03T02:15:51.146Z",
+      "slug": "behavior-challenge-2026-11k"
     }
   ]
 }
