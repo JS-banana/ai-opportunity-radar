@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T05:27:41.843Z",
-  "recordCount": 105,
+  "generatedAt": "2026-08-05T14:42:58.134Z",
+  "recordCount": 106,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -2979,6 +2979,35 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-05T02:19:29.121Z",
       "slug": "the-rise-of-ai-agents-hackathon-60k-ai-agent-dubai-ai-week"
+    },
+    {
+      "id": "recvrqlythKe7O",
+      "title": "Creative Minds Jam #1: Hong Kong — $10K创作者经济Agent大赛",
+      "vendor": "Animoca Brands",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": null,
+      "rewardSummary": "$10,000奖池 + Minds Investment Programme最高$250K投资机会。全球开放无资格门槛，线上虚拟参与。需用Minds (Anim",
+      "rewardDetail": "$10,000奖池 + Minds Investment Programme最高$250K投资机会。全球开放无资格门槛，线上虚拟参与。需用Minds (Animoca Brands) 持久智能体技术构建创作者经济解决方案（创作者/YouTuber/艺术家工具），单/多Agent架构均可。4周赛事，2026-08-28 23:59 HKT 截止。详情: https://creativemindsjam.com/",
+      "rewardTypes": [
+        "cash",
+        "other"
+      ],
+      "format": "线上4周Jam + 每周工作坊/导师指导 (Open Campus合作)",
+      "participation": "DoraHacks报名 + hellominds.ai注册，提交含Minds agent的可用产品+演示",
+      "winningCriteria": "创意度/技术实现/商业潜力三维评审，Grand Prize + Student Prize + 3赛道奖",
+      "timelineNotes": null,
+      "startAt": "2026-08-04T16:00:00.000Z",
+      "endAt": "2026-08-28T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/creativeminds/detail",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-05T12:16:49.897Z",
+      "slug": "creative-minds-jam-1-hong-kong-10k-agent"
     }
   ]
 }
