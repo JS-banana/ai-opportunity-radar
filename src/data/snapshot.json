@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T14:57:11.911Z",
-  "recordCount": 103,
+  "generatedAt": "2026-08-05T05:27:41.843Z",
+  "recordCount": 105,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -2923,6 +2923,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-03T12:12:11.619Z",
       "slug": "agents-for-impact-2026-2027-ai-agent"
+    },
+    {
+      "id": "recvrnUFfzNBfb",
+      "title": "Delphi: Agent Arena Competition — $10K AI Agent自动交易/预测市场",
+      "vendor": "Delphi + Gensyn",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "开发自主交易/预测市场 Agent，需 TypeScript/Solidity，Web3 生态经验",
+      "rewardSummary": "Prize pool $10,000 USD。虚拟赛：Aug 9 开始提交，Aug 23 截止。由 Delphi (知名加密研究机构) + Gensyn 主办。",
+      "rewardDetail": "Prize pool $10,000 USD。虚拟赛：Aug 9 开始提交，Aug 23 截止。由 Delphi (知名加密研究机构) + Gensyn 主办。详情: https://dorahacks.io/hackathon/delphi-agent-competition",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "DoraHacks 报名提交 BUIDL",
+      "winningCriteria": null,
+      "timelineNotes": null,
+      "startAt": "2026-08-04T16:00:00.000Z",
+      "endAt": "2026-08-23T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/delphi-agent-competition",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-05T02:17:28.351Z",
+      "slug": "delphi-agent-arena-competition-10k-ai-agent"
+    },
+    {
+      "id": "recvrnVaDuFNna",
+      "title": "The Rise of AI Agents Hackathon — $60K+ 全球AI Agent (Dubai AI Week)",
+      "vendor": "lablab.ai + Dubai AI Week",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "开发可自主推理/规划/执行的真实 AI Agent；线上参与开放，线下决赛(迪拜)需邀请",
+      "rewardSummary": "$60,000+ prize pool。线上全球 Build Phase + Dubai AI Week 线下决赛（邀请制，不含差旅）。Fall 2026 日期",
+      "rewardDetail": "$60,000+ prize pool。线上全球 Build Phase + Dubai AI Week 线下决赛（邀请制，不含差旅）。Fall 2026 日期待定，报名已开放。详情: https://lablab.ai/ai-hackathons/ai-agents-ai-week-hackathon",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "混合(线上+线下)",
+      "participation": "lablab.ai 报名",
+      "winningCriteria": null,
+      "timelineNotes": null,
+      "startAt": "2026-08-04T16:00:00.000Z",
+      "endAt": null,
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://lablab.ai/ai-hackathons/ai-agents-ai-week-hackathon",
+      "sourceChannel": "lablab.ai",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-05T02:19:29.121Z",
+      "slug": "the-rise-of-ai-agents-hackathon-60k-ai-agent-dubai-ai-week"
     }
   ]
 }
