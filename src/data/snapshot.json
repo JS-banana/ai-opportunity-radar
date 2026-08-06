@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T05:30:00.871Z",
-  "recordCount": 110,
+  "generatedAt": "2026-08-06T14:42:46.989Z",
+  "recordCount": 112,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3122,6 +3122,62 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-06T02:20:17.066Z",
       "slug": "buidl-ctc-2026-fall-15k-attestcoin-protocol-hackathon"
+    },
+    {
+      "id": "recvrwcEgxQTpV",
+      "title": "TikTok TechJam 2026 — $34.5K 全球72小时在线Hackathon",
+      "vendor": "TikTok",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 2,
+      "difficultyNote": "线上72小时开发，需提交代码仓库+3分钟demo视频，8/23早鸟报名可提前拿赛题",
+      "rewardSummary": "$34,500 现金奖池（约₹31.7L），分赛道设奖，具体分配见Devpost规则页",
+      "rewardDetail": "$34,500 现金奖池（约₹31.7L），分赛道设奖，具体分配见Devpost规则页",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上 72 小时挑战（8/29-9/1），8/25 公开赛题，8/28 技术工坊",
+      "participation": "需同时在官方报名表单 + Devpost 注册，提交代码仓库与 demo 视频",
+      "winningCriteria": "按赛道评审：解决方案质量、技术栈、演示完整度",
+      "timelineNotes": "8/23 早鸟报名截止；8/25 早鸟赛题发布；9/1 提交截止；9/8 入围公布",
+      "startAt": "2026-08-05T16:00:00.000Z",
+      "endAt": "2026-09-01T04:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tiktoktechjam2026.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-06T12:19:05.596Z",
+      "slug": "tiktok-techjam-2026-34-5k-72-hackathon"
+    },
+    {
+      "id": "recvrwcGvUP1to",
+      "title": "CCL 2026 AI 大模型竞赛 — 天池赛道 ¥40K",
+      "vendor": "CCL 2026",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 4,
+      "difficultyNote": "NLP/大模型方向学术评测赛，需提交系统+论文，评审含双盲审稿",
+      "rewardSummary": "奖金池 ¥40,000，一等奖 ¥30,000；附 CCL 2026 学术会议报告机会",
+      "rewardDetail": "奖金池 ¥40,000，一等奖 ¥30,000；附 CCL 2026 学术会议报告机会",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上赛（5/15-12/31）+ 学术论文提交",
+      "participation": "天池平台报名组队（≤3人），在线提交结果与代码",
+      "winningCriteria": "综合线上分数+专家评审+论文双盲评审",
+      "timelineNotes": "报名与比赛期 2026.05.15~12.31，长期可参加；已 1782 队参赛",
+      "startAt": "2026-08-05T16:00:00.000Z",
+      "endAt": "2026-12-30T16:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tianchi.aliyun.com/competition/entrance/532479",
+      "sourceChannel": "天池",
+      "estimatedEffort": "1-2周",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-06T12:19:14.135Z",
+      "slug": "ccl-2026-ai-40k"
     }
   ]
 }
