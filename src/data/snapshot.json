@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T14:42:46.989Z",
-  "recordCount": 112,
+  "generatedAt": "2026-08-07T04:35:13.218Z",
+  "recordCount": 114,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3178,6 +3178,63 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-06T12:19:14.135Z",
       "slug": "ccl-2026-ai-40k"
+    },
+    {
+      "id": "recvrzCZjHr0Ic",
+      "title": "RevenueCat Shipaton 2026 — $700K+现金 全球最大移动App Hackathon",
+      "vendor": "RevenueCat",
+      "type": "dev-challenge",
+      "score": 4,
+      "difficulty": 4,
+      "difficultyNote": "需开发完整app并集成RevenueCat SDK上架；学生可豁免商店上架（交代码+演示视频即可）",
+      "rewardSummary": "$700K+现金（总奖池$1M+），Grand Prize $100K现金，21个类别（含学生NextGen类别）；Times Square广告牌、NYC颁奖典",
+      "rewardDetail": "$700K+现金（总奖池$1M+），Grand Prize $100K现金，21个类别（含学生NextGen类别）；Times Square广告牌、NYC颁奖典礼、9to5Mac/9to5Google报道、投资者曝光。官方公告: https://www.revenuecat.com/blog/company/announcing-shipaton-2026",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "在线，8/1-9/30期间上架新app至App Store/Google Play/Samsung Galaxy Store并集成RevenueCat SDK",
+      "participation": "https://revenuecat-shipaton-2026.devpost.com 或 shipaton.com 注册",
+      "winningCriteria": "8/1-9/30期间发布的brand-new app + RevenueCat SDK集成（至少1个内购或RevenueCat Ads），按类别评奖",
+      "timelineNotes": null,
+      "startAt": "2026-08-06T16:00:00.000Z",
+      "endAt": "2026-10-01T06:45:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://revenuecat-shipaton-2026.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1周+",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-07T02:22:32.005Z",
+      "slug": "revenuecat-shipaton-2026-700k-app-hackathon"
+    },
+    {
+      "id": "recvrzDeRiubOg",
+      "title": "2026 iFLYTEK AI开发者大赛-机器人创意设计赛题 — 至尊奖¥1万+实习就业机会",
+      "vendor": "科大讯飞",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 2,
+      "difficultyNote": "作品征集型，提交设计展板/方案即可，无需实机；决赛需制作实物模型（费用由组委会承担）",
+      "rewardSummary": "至尊奖¥10K+奖杯证书，金奖¥8K×2，银奖¥5K×3，铜奖¥3K×4，优秀奖40名；前10强受邀讯飞全球1024开发者节展示+优先实习/就业Offer",
+      "rewardDetail": "至尊奖¥10K+奖杯证书，金奖¥8K×2，银奖¥5K×3，铜奖¥3K×4，优秀奖40名；前10强受邀讯飞全球1024开发者节展示+优先实习/就业Offer",
+      "rewardTypes": [
+        "cash",
+        "certificate"
+      ],
+      "format": "线上征集（5.25-9.10）+线下决赛（10.23 1024开发者节现场答辩）",
+      "participation": "https://challenge.xfyun.cn/robot 报名，企业/高校/团队/个人均可（≤5人）",
+      "winningCriteria": "9.10前提交机器人创新设计方案，初赛评50份入围，复赛前10强晋级决赛",
+      "timelineNotes": null,
+      "startAt": "2026-08-06T16:00:00.000Z",
+      "endAt": "2026-09-10T15:59:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://challenge.xfyun.cn/robot",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-07T02:23:31.947Z",
+      "slug": "2026-iflytek-ai-1"
     }
   ]
 }
