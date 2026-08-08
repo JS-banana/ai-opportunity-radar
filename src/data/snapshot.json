@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T13:45:53.177Z",
-  "recordCount": 117,
+  "generatedAt": "2026-08-08T03:48:21.327Z",
+  "recordCount": 118,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3320,6 +3320,34 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-07T12:14:39.966Z",
       "slug": "8-25"
+    },
+    {
+      "id": "recvrFtFOSEynz",
+      "title": "Kaggriculture — 虚拟农场AI Agent模拟竞赛 $50K",
+      "vendor": "Kaggle + Google",
+      "type": "ai-competition",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "需开发 agent 策略（kaggle-environments 模拟环境，Python），官方提供 starter 代码，上手门槛中等",
+      "rewardSummary": "总奖金池 $50,000（Kaggle × Google 官方模拟竞赛，8/3 发布）。详情 https://www.kaggle.com/competitio",
+      "rewardDetail": "总奖金池 $50,000（Kaggle × Google 官方模拟竞赛，8/3 发布）。详情 https://www.kaggle.com/competitions/kaggriculture",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上模拟竞赛（farming simulation，agent 对战）",
+      "participation": "Kaggle 报名加入竞赛，提交含 agent 函数的 main.py",
+      "winningCriteria": "最大化农场收入，与全球选手对战排名（截止 2026-09-23）",
+      "timelineNotes": null,
+      "startAt": "2026-08-07T16:00:00.000Z",
+      "endAt": "2026-09-22T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://www.kaggle.com/competitions/kaggriculture",
+      "sourceChannel": "Twitter",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-08T02:23:09.945Z",
+      "slug": "kaggriculture-ai-agent-50k"
     }
   ]
 }
