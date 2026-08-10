@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T13:28:29.965Z",
-  "recordCount": 121,
+  "generatedAt": "2026-08-10T04:10:49.808Z",
+  "recordCount": 122,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3433,6 +3433,35 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-09T02:13:06.908Z",
       "slug": "2026-ai-agent-skills-60-ai4s"
+    },
+    {
+      "id": "recvrR9YKp44gM",
+      "title": "Q力星期四·小鹏AI出行服务编排Agent挑战赛",
+      "vendor": "阿里云(小鹏)",
+      "type": "dev-challenge",
+      "score": 4,
+      "difficulty": 2,
+      "difficultyNote": "提交可运行Agent+Demo即可，Qoder加分项非强制",
+      "rewardSummary": "一等奖 Qoder 20000 credits+阿里云定制背包；二等奖 Qoder 10000 credits+背包；三等奖5名背包。赛题详情 https://",
+      "rewardDetail": "一等奖 Qoder 20000 credits+阿里云定制背包；二等奖 Qoder 10000 credits+背包；三等奖5名背包。赛题详情 https://tianchi.aliyun.com/competition/entrance/532505",
+      "rewardTypes": [
+        "api-credits",
+        "physical"
+      ],
+      "format": "线上提交作品（可体验Agent+Demo视频）",
+      "participation": "天池报名，作品发布在赛事论坛，题目前缀Qoder码力星期四",
+      "winningCriteria": "专家评审：场景理解20/服务编排25/安全边界20/可体验15/交互10/创新10",
+      "timelineNotes": "报名及提交至2026-08-13 23:59；评选8/14-8/19；结果公布8/20",
+      "startAt": "2026-08-09T16:00:00.000Z",
+      "endAt": "2026-08-13T15:59:59.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tianchi.aliyun.com/competition/entrance/532505",
+      "sourceChannel": "天池",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-10T02:20:12.164Z",
+      "slug": "q-ai-agent"
     }
   ]
 }
