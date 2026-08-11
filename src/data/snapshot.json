@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T03:58:11.060Z",
-  "recordCount": 127,
+  "generatedAt": "2026-08-11T13:49:39.599Z",
+  "recordCount": 129,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3603,6 +3603,62 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-10T12:17:22.701Z",
       "slug": "2026-10"
+    },
+    {
+      "id": "recvrZpFhH1W0B",
+      "title": "Decentraland Friendzone Mobile Buildathon",
+      "vendor": "Decentraland",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": null,
+      "rewardSummary": "$8,000 MANA 奖池（冠军$3K MANA）+ 前50名$30周边券 + 徽章 + 移动端Discover曝光",
+      "rewardDetail": "$8,000 MANA 奖池（冠军$3K MANA）+ 前50名$30周边券 + 徽章 + 移动端Discover曝光",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "线上 · 三周构建期（虚拟世界/移动端优先）",
+      "participation": "DoraHacks 预注册（已开），8/14 Kickoff 开始构建，需开源项目",
+      "winningCriteria": "面向移动端设计的社交聚会/多人活动/协作挑战/竞技游戏类 Decentraland World",
+      "timelineNotes": "构建 8/14-9/4；评审 9/5-9/11；获奖公布 9/13；Web3/元宇宙开发者适合，奖池为 MANA 代币非现金",
+      "startAt": "2026-08-10T16:00:00.000Z",
+      "endAt": "2026-09-04T00:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/friendzone/detail",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-11T12:12:41.193Z",
+      "slug": "decentraland-friendzone-mobile-buildathon"
+    },
+    {
+      "id": "recvrZpHCFI1rP",
+      "title": "Pixel Forge AI Hackathon 2026 ($13K+非现金)",
+      "vendor": "Pixel Forge",
+      "type": "hackathon",
+      "score": 2,
+      "difficulty": 3,
+      "difficultyNote": null,
+      "rewardSummary": "宣传价 $13,000+，实际为 6 项非现金奖（工具/订阅类）；学生限定",
+      "rewardDetail": "宣传价 $13,000+，实际为 6 项非现金奖（工具/订阅类）；学生限定",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "线上 · 1周（8/15-8/22）",
+      "participation": "Devpost 注册报名，构建并提交开源项目",
+      "winningCriteria": "AI 为核心 + 开源仓库 + ~3分钟演示视频 + Devpost 提交",
+      "timelineNotes": "仅限学生（13+），企业与专业人士不可参加",
+      "startAt": "2026-08-10T16:00:00.000Z",
+      "endAt": "2026-08-22T00:00:00.000Z",
+      "region": "global",
+      "officialStatus": "suspected",
+      "registrationUrl": "https://pixel-forge-ai-hackathon-08.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "skip",
+      "discoveredAt": "2026-08-11T12:12:50.531Z",
+      "slug": "pixel-forge-ai-hackathon-2026-13k"
     }
   ]
 }
