@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T04:20:35.176Z",
-  "recordCount": 129,
+  "generatedAt": "2026-08-12T13:54:09.843Z",
+  "recordCount": 132,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3659,6 +3659,90 @@
       "suggestion": "skip",
       "discoveredAt": "2026-08-11T12:12:50.531Z",
       "slug": "pixel-forge-ai-hackathon-2026-13k"
+    },
+    {
+      "id": "recvs5jMBnR7IQ",
+      "title": "2026 AI杭州·码动未来 AI模型智能体创新大赛 — ¥21万 超级智能体/具身/时空三赛道",
+      "vendor": "杭州余杭区/msup",
+      "type": "dev-challenge",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "三赛道：AI+超级智能体(Agent应用)、AI+具身智能(复杂接触操作)、AI+时空智能(低空经济)。初赛线上提交，决赛现场路演",
+      "rewardSummary": "总奖金21万元+百强赋能礼包：算力/工位券(3000元工位券+1000元token券)、实习直通车、创业导师、行业大会门票；联动真格基金等30+头部投资机构",
+      "rewardDetail": "总奖金21万元+百强赋能礼包：算力/工位券(3000元工位券+1000元token券)、实习直通车、创业导师、行业大会门票；联动真格基金等30+头部投资机构",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上初赛+线下决赛路演(杭州余杭)",
+      "participation": "官网 aichallenge.msup.com.cn 注册报名，即日起开放报名，9/19初赛提交截止",
+      "winningCriteria": "初赛评审(问题价值/创新性)→Top100晋级复赛→决赛路演答辩，院士评委+大厂CTO+头部VC评审",
+      "timelineNotes": null,
+      "startAt": "2026-08-11T16:00:00.000Z",
+      "endAt": "2026-09-18T16:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://aichallenge.msup.com.cn/",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-12T12:26:57.661Z",
+      "slug": "2026-ai-ai-21"
+    },
+    {
+      "id": "recvs5jSyAuy1V",
+      "title": "2026 Camera学术之星影像算法技术竞赛 — CSIG+华为 ¥20万 2赛道",
+      "vendor": "CSIG+华为终端",
+      "type": "ai-competition",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "影像算法（Camera影像处理），华为终端真实业务场景，禁止使用商用修图软件",
+      "rewardSummary": "每赛道：一等奖3万(1队)、二等奖2万(2队)、三等奖1万(3队)，2赛道合计约20万",
+      "rewardDetail": "每赛道：一等奖3万(1队)、二等奖2万(2队)、三等奖1万(3队)，2赛道合计约20万",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上刷分打榜初赛+线下答辩决赛(10月)",
+      "participation": "天池报名，高校在读学生，1-3人组队，9/15 18:00截止",
+      "winningCriteria": "初赛每个赛道Top10晋级决赛，现场答辩+现场测图评分",
+      "timelineNotes": null,
+      "startAt": "2026-08-11T16:00:00.000Z",
+      "endAt": "2026-09-15T10:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tianchi.aliyun.com/competition/entrance/532499",
+      "sourceChannel": "天池",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-12T12:27:20.583Z",
+      "slug": "2026-camera-csig-20-2"
+    },
+    {
+      "id": "recvs5jXqkujS8",
+      "title": "IEEE AICAS 2026 Grand Challenge — VLM边缘推理优化(AI Chips赛道) $3.5K",
+      "vendor": "IEEE AICAS + 阿里云天池",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "系统级推理优化（视觉编码/跨模态交互/文本生成全链路），适合底层优化选手",
+      "rewardSummary": "AI Chips赛道奖金$3,550（FPGA赛道已结束），Qwen3-VL-2B端侧部署优化，阿里云APG平台",
+      "rewardDetail": "AI Chips赛道奖金$3,550（FPGA赛道已结束），Qwen3-VL-2B端侧部署优化，阿里云APG平台",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上评测",
+      "participation": "天池报名，最多3人+2导师，9/16截止提交",
+      "winningCriteria": "评测排行榜+评审",
+      "timelineNotes": null,
+      "startAt": "2026-08-11T16:00:00.000Z",
+      "endAt": "2026-09-15T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tianchi.aliyun.com/competition/entrance/532450",
+      "sourceChannel": "天池",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-12T12:27:39.199Z",
+      "slug": "ieee-aicas-2026-grand-challenge-vlm-ai-chips-3-5k"
     }
   ]
 }
