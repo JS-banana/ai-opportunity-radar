@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T13:54:09.843Z",
-  "recordCount": 132,
+  "generatedAt": "2026-08-13T04:23:32.721Z",
+  "recordCount": 133,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3743,6 +3743,35 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-12T12:27:39.199Z",
       "slug": "ieee-aicas-2026-grand-challenge-vlm-ai-chips-3-5k"
+    },
+    {
+      "id": "recvs8J3r6Uxdz",
+      "title": "江源杯2026具身智能场景技能挑战赛 — ¥5-20万奖金+千万级投资/场景订单",
+      "vendor": "宜宾市高新区+中国电子学会",
+      "type": "ai-competition",
+      "score": 4,
+      "difficulty": 4,
+      "difficultyNote": "面向具身智能机器人整机方案（人形/轮式/四足），需算法+机器人团队，海选-晋级赛-总决赛三级实战",
+      "rewardSummary": "获奖团队获5-20万赛事奖金；产业基金最高千万级股权投资；千万级真实场景合作订单；品牌曝光+人才认证。详情见官方报道：https://www.ithome.co",
+      "rewardDetail": "获奖团队获5-20万赛事奖金；产业基金最高千万级股权投资；千万级真实场景合作订单；品牌曝光+人才认证。详情见官方报道：https://www.ithome.com/0/980/541.htm",
+      "rewardTypes": [
+        "cash",
+        "other"
+      ],
+      "format": "线上报名+线下晋级赛(9/3-4)+总决赛(12月中下旬)",
+      "participation": "报名时间2026/7/22-8/25，面向全球企业、高校及科研院所团队、初创团队，个人或团队均可，须设项目负责人",
+      "winningCriteria": "海选→晋级赛→总决赛，赛题取自企业生产/城市治理/民生服务真实场景",
+      "timelineNotes": null,
+      "startAt": "2026-08-12T16:00:00.000Z",
+      "endAt": "2026-08-24T16:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://www.ithome.com/0/980/541.htm",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3个月",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-13T02:26:09.148Z",
+      "slug": "2026-5-20"
     }
   ]
 }
