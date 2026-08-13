@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T04:23:32.721Z",
-  "recordCount": 133,
+  "generatedAt": "2026-08-13T13:54:29.388Z",
+  "recordCount": 134,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3772,6 +3772,36 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-13T02:26:09.148Z",
       "slug": "2026-5-20"
+    },
+    {
+      "id": "recvsb7Fj22byb",
+      "title": "Hack for Humanity Summer 2026 — AI健康主题线上Hackathon",
+      "vendor": "Hack for Humanity",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 1,
+      "difficultyNote": "Beginner Friendly，全球线上，个人或2-4人组队，13+即可",
+      "rewardSummary": "$600现金+13个奖项类别；参与奖礼包(Wolfram 1个月/$50 Render credits/Miro 3个月/DevSwarm/MeDo credi",
+      "rewardDetail": "$600现金+13个奖项类别；参与奖礼包(Wolfram 1个月/$50 Render credits/Miro 3个月/DevSwarm/MeDo credits)；前200名有效提交送.xyz域名；详情链接见 devpost 页面",
+      "rewardTypes": [
+        "cash",
+        "api-credits",
+        "membership"
+      ],
+      "format": "线上，1个月赛期",
+      "participation": "Devpost 注册报名+Discord，提交 GitHub 仓库+4分钟视频",
+      "winningCriteria": "最佳心理健康工具$100/最佳身体健康$506价值/负责任AI$8676价值(SSOJet授权)/最佳设计$500现金等",
+      "timelineNotes": null,
+      "startAt": "2026-08-12T16:00:00.000Z",
+      "endAt": "2026-09-05T03:45:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://hack-for-humanity-summer-26.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-13T12:16:27.447Z",
+      "slug": "hack-for-humanity-summer-2026-ai-hackathon"
     }
   ]
 }
