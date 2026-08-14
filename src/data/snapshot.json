@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T13:54:29.388Z",
-  "recordCount": 134,
+  "generatedAt": "2026-08-14T04:21:09.136Z",
+  "recordCount": 136,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3802,6 +3802,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-13T12:16:27.447Z",
       "slug": "hack-for-humanity-summer-2026-ai-hackathon"
+    },
+    {
+      "id": "recvseyjKdWMbR",
+      "title": "AWS Trainium Frontier Competition — $40K Trainium2芯片级模型训练赛",
+      "vendor": "AWS",
+      "type": "ai-competition",
+      "score": 4,
+      "difficulty": 5,
+      "difficultyNote": "需ML系统/训练优化能力：从零训练~50M参数LLM，需掌握NKI kernel开发；无Trainium经验也可但门槛高",
+      "rewardSummary": "$40,000现金池：冠军$25K/亚军$10K/季军$5K。Phase1在30分钟单芯片训练预算内最大化模型能力，Top10晋级Phase2获得完整Trn2服",
+      "rewardDetail": "$40,000现金池：冠军$25K/亚军$10K/季军$5K。Phase1在30分钟单芯片训练预算内最大化模型能力，Top10晋级Phase2获得完整Trn2服务器；决赛典礼在NeurIPS 2026。仅限前100队注册，1-4人/队。详情: https://trainium-frontier.devpost.com",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上多阶段（Phase1 30分钟单芯片训练 → Phase2 Trn2全服务器）",
+      "participation": "Devpost注册，先到先得（前100队），需18岁+",
+      "winningCriteria": "Leaderboard自动评分，Phase1 Top10晋级Phase2，NeurIPS 2026决出$40K",
+      "timelineNotes": null,
+      "startAt": "2026-08-13T16:00:00.000Z",
+      "endAt": "2026-09-30T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://trainium-frontier.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "长期投入",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-14T02:21:07.977Z",
+      "slug": "aws-trainium-frontier-competition-40k-trainium2"
+    },
+    {
+      "id": "recvseyxWjqD7h",
+      "title": "华为云开发者空间 免费3-6个月云电脑（高配+不关机）",
+      "vendor": "华为云",
+      "type": "benefit",
+      "score": 3,
+      "difficulty": 1,
+      "difficultyNote": "开发者空间注册+实名即可领取云电脑3-6个月使用权",
+      "rewardSummary": "华为云开发者空间免费云电脑3-6个月（高配+不关机），可跑AI小任务；linux.do 2026-08-13实测北京节点延迟10ms内。注意：华为云开发者计划8",
+      "rewardDetail": "华为云开发者空间免费云电脑3-6个月（高配+不关机），可跑AI小任务；linux.do 2026-08-13实测北京节点延迟10ms内。注意：华为云开发者计划8000核时虚拟机将于8/15停止创建、9/22停止开机、9/30下线，需迁移容器版",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "在线领取",
+      "participation": "华为云开发者空间-云开发环境（cloud_desktop标签页）领取",
+      "winningCriteria": null,
+      "timelineNotes": null,
+      "startAt": "2026-08-13T16:00:00.000Z",
+      "endAt": null,
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://developer.huaweicloud.com/space/devportal/platform/devEnvironment?tab=cloud_desktop",
+      "sourceChannel": null,
+      "estimatedEffort": "1小时内",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-14T02:22:03.267Z",
+      "slug": "3-6"
     }
   ]
 }
