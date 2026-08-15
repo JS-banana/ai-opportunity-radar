@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T03:10:04.582Z",
-  "recordCount": 138,
+  "generatedAt": "2026-08-15T13:04:55.834Z",
+  "recordCount": 140,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3914,6 +3914,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-14T12:35:20.328Z",
       "slug": "alpaca-ai-trading-agents-hackathon-5k-ai-agent"
+    },
+    {
+      "id": "recvsmNUIr3JzU",
+      "title": "Agents for Humans Hackathon — $40K现金 3赛道 AI Agent开发",
+      "vendor": "AWS",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "低门槛，官方标注 Beginner Friendly，solo/组队均可",
+      "rewardSummary": "$40,000现金，3赛道（日常事务/专业工作流/社区物流），Grand Prize $10K；另送 $50 AWS credits 覆盖构建成本；Strand",
+      "rewardDetail": "$40,000现金，3赛道（日常事务/专业工作流/社区物流），Grand Prize $10K；另送 $50 AWS credits 覆盖构建成本；Strands Agents SDK 开源、AWS 背书",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上 Hackathon",
+      "participation": "Devpost 注册，用 Strands Agents SDK 构建处理重复任务的 AI Agent，开放全球开发者",
+      "winningCriteria": "技术实现/创新性/实际价值，3分钟 demo 视频",
+      "timelineNotes": null,
+      "startAt": "2026-08-14T16:00:00.000Z",
+      "endAt": "2026-09-13T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://agentsforhumans.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-15T12:13:16.310Z",
+      "slug": "agents-for-humans-hackathon-40k-3-ai-agent"
+    },
+    {
+      "id": "recvsmNWXWXglf",
+      "title": "OneAquaHealth IEEE Global Hackathon 2026 — $3K+ 城市水生态AI",
+      "vendor": "IEEE + OneAquaHealth",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "全球开放，数据/AI/公民科学方向，团队或个人均可",
+      "rewardSummary": "$3,000+现金，IEEE Merit Award $1,000×3；欧盟 OneAquaHealth 项目背书，获奖作品收录进 OneAquaHealth ",
+      "rewardDetail": "$3,000+现金，IEEE Merit Award $1,000×3；欧盟 OneAquaHealth 项目背书，获奖作品收录进 OneAquaHealth Open Information Hub；iGET 大会颁奖",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上 Hackathon",
+      "participation": "Devpost 注册（注册截止 8/31，提交截止 10/1），AI/数据科学解决城市淡水生态健康问题",
+      "winningCriteria": "创新性/技术执行/真实世界影响力",
+      "timelineNotes": null,
+      "startAt": "2026-08-14T16:00:00.000Z",
+      "endAt": "2026-09-30T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-15T12:13:25.248Z",
+      "slug": "oneaquahealth-ieee-global-hackathon-2026-3k-ai"
     }
   ]
 }
