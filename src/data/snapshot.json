@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T13:04:55.834Z",
-  "recordCount": 140,
+  "generatedAt": "2026-08-16T03:24:33.024Z",
+  "recordCount": 142,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -3970,6 +3970,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-15T12:13:25.248Z",
       "slug": "oneaquahealth-ieee-global-hackathon-2026-3k-ai"
+    },
+    {
+      "id": "recvsqd4NM78Uy",
+      "title": "Proof of Possible 2026 — $9K现金 3天全球线上AI原型验证赛",
+      "vendor": "Proof of Possible",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "需交付可运行的demo+演示视频+源码仓库",
+      "rewardSummary": "$9,000 现金奖池，全球线上 3 天赛（8/20-8/22），~90人参赛，竞争比优。要求 working demo + 3分钟演示视频 + 可读READM",
+      "rewardDetail": "$9,000 现金奖池，全球线上 3 天赛（8/20-8/22），~90人参赛，竞争比优。要求 working demo + 3分钟演示视频 + 可读README仓库",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上 3 天集中赛",
+      "participation": "Devpost 报名，Aug 20-22, 2026",
+      "winningCriteria": "项目评选：问题定义/方案/可运行demo/演示视频/技术说明",
+      "timelineNotes": null,
+      "startAt": "2026-08-15T16:00:00.000Z",
+      "endAt": "2026-08-22T15:59:59.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://proof-of-possible-2026.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-16T02:12:02.161Z",
+      "slug": "proof-of-possible-2026-9k-3-ai"
+    },
+    {
+      "id": "recvsqdiZpCXOQ",
+      "title": "2026具身世界realworld挑战赛 — ¥30万 真机验证具身智能赛道",
+      "vendor": "天池(阿里云)",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 5,
+      "difficultyNote": "机器人/具身智能方向，需真机或仿真+真机迁移能力",
+      "rewardSummary": "¥300,000 奖金池，2026.08.06-11.30，149队参赛中。聚焦具身智能从仿真走向真实世界验证（realworld），与已收录的¥10万三赛道（",
+      "rewardDetail": "¥300,000 奖金池，2026.08.06-11.30，149队参赛中。聚焦具身智能从仿真走向真实世界验证（realworld），与已收录的¥10万三赛道（仿真合成/跨本体/具身安全，entrance/532508，报名截止9/1）同属天池具身大赛体系",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上算法赛+真机验证",
+      "participation": "天池平台报名（列表页搜索'具身世界realworld'）",
+      "winningCriteria": "任务完成效果+稳定性/安全性/恢复能力综合评估",
+      "timelineNotes": null,
+      "startAt": "2026-08-15T16:00:00.000Z",
+      "endAt": "2026-11-30T15:59:59.000Z",
+      "region": "other",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://tianchi.aliyun.com/competition",
+      "sourceChannel": "天池",
+      "estimatedEffort": "1个月+",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-16T02:12:57.052Z",
+      "slug": "2026-realworld-30"
     }
   ]
 }
