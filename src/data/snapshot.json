@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T13:06:37.501Z",
-  "recordCount": 142,
+  "generatedAt": "2026-08-17T03:25:20.591Z",
+  "recordCount": 144,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4026,6 +4026,65 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-16T02:12:57.052Z",
       "slug": "2026-realworld-30"
+    },
+    {
+      "id": "recvsw5ywNDVuc",
+      "title": "GatewayHacks 2026 — $11.7K现金 软件+AI线上Hackathon",
+      "vendor": "GatewayGS",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 2,
+      "difficultyNote": "新手友好，线上免费报名，社会公益主题，无门槛",
+      "rewardSummary": "$11,685现金（Best Overall $2,100/2nd $2,050/3rd $2,035/4th $2,000/Best No-Code AI A",
+      "rewardDetail": "$11,685现金（Best Overall $2,100/2nd $2,050/3rd $2,035/4th $2,000/Best No-Code AI App $2,000等）+ Momen credits + 域名优惠券；Devpost 页面标价 $18,285（含非现金）。详情: https://www.startupgrantsindia.com/gatewayhacks-2026-software-ai",
+      "rewardTypes": [
+        "cash",
+        "api-credits"
+      ],
+      "format": "线上 Hackathon（9月1日开始，10月2日提交截止）",
+      "participation": "Devpost 免费注册报名",
+      "winningCriteria": "软件/AI解决方案评审，强调社会公益价值与可落地性",
+      "timelineNotes": null,
+      "startAt": "2026-08-16T16:00:00.000Z",
+      "endAt": "2026-10-01T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://gatewayhacks-2026.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-17T02:19:47.511Z",
+      "slug": "gatewayhacks-2026-11-7k-ai-hackathon"
+    },
+    {
+      "id": "recvsw5B0Abdwu",
+      "title": "全场景内容智能创作Skill开发挑战赛(FSCIC-Skill) — ¥12.3K 双榜单",
+      "vendor": "科大讯飞",
+      "type": "dev-challenge",
+      "score": 3,
+      "difficulty": 2,
+      "difficultyNote": "Skill 开发门槛低，已有1476支队伍参赛",
+      "rewardSummary": "¥12,300奖金池（专家榜+热度榜双榜单独立评奖）+ 讯飞星辰MaaS平台礼品卡 + 官方技能市场精选推荐 + 人才库；报名任意算法赛题并提交有效作品可获30",
+      "rewardDetail": "¥12,300奖金池（专家榜+热度榜双榜单独立评奖）+ 讯飞星辰MaaS平台礼品卡 + 官方技能市场精选推荐 + 人才库；报名任意算法赛题并提交有效作品可获30元MaaS礼品卡",
+      "rewardTypes": [
+        "cash",
+        "api-credits",
+        "certificate"
+      ],
+      "format": "线上赛（6/9-8/27，热度榜数据截止8/27 17:00）",
+      "participation": "challenge.xfyun.cn 免费注册报名",
+      "winningCriteria": "基于讯飞星辰Agent平台开发内容创作Skill，专家榜+热度榜双榜评审",
+      "timelineNotes": null,
+      "startAt": "2026-08-16T16:00:00.000Z",
+      "endAt": "2026-08-27T09:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://challenge.xfyun.cn/topic/info?type=FSCIC-Skill",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-17T02:19:57.239Z",
+      "slug": "skill-fscic-skill-12-3k"
     }
   ]
 }
