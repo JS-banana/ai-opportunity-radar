@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T03:25:20.591Z",
-  "recordCount": 144,
+  "generatedAt": "2026-08-17T13:13:04.003Z",
+  "recordCount": 145,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4085,6 +4085,34 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-17T02:19:57.239Z",
       "slug": "skill-fscic-skill-12-3k"
+    },
+    {
+      "id": "recvsyvd9e4hSs",
+      "title": "2026长三角国际人工智能应用场景科创大赛 — 100亿基金池+OPC科创基地入驻",
+      "vendor": "长三角人工智能发展联盟",
+      "type": "dev-incentive",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需提交完整应用场景方案+路演，产业落地导向",
+      "rewardSummary": "获奖项目纳入主办方100亿投资基金项目池，优先获长三角人工智能产业基金投融资，免费入驻OPC科创基地（产业园区招商平台）。详情：https://news.sci",
+      "rewardDetail": "获奖项目纳入主办方100亿投资基金项目池，优先获长三角人工智能产业基金投融资，免费入驻OPC科创基地（产业园区招商平台）。详情：https://news.sciencenet.cn/htmlnews/2026/7/568681.shtm",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "网络选拔赛+专项决赛两级赛制，路演比拼+赛奖嘉年华",
+      "participation": "官网/科学网公告报名，7/20起全球征集，面向AI+未来产业/AI+工业数智化/AI+城市公共服务三大赛道，设OPC创新组/高校种子组/企业成长组",
+      "winningCriteria": "项目评审+路演，重点推荐/网络选拔/场景开放/路演比拼",
+      "timelineNotes": "7/20开启报名，9/30截止，10月底网络选拔赛，12/30前全国专项决赛。李德仁院士领衔指导",
+      "startAt": "2026-08-16T16:00:00.000Z",
+      "endAt": "2026-09-30T15:59:59.000Z",
+      "region": "other",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://news.sciencenet.cn/htmlnews/2026/7/568681.shtm",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-17T12:14:15.069Z",
+      "slug": "2026-100-opc"
     }
   ]
 }
