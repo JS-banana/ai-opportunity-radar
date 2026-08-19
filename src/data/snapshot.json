@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T13:16:03.944Z",
-  "recordCount": 145,
+  "generatedAt": "2026-08-19T03:22:22.504Z",
+  "recordCount": 147,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4113,6 +4113,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-17T12:14:15.069Z",
       "slug": "2026-100-opc"
+    },
+    {
+      "id": "recvsHNkra3nyG",
+      "title": "Event Contracts Hackathon — DeFi事件合约+预测市场 $5K",
+      "vendor": "Somnia Network",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "DeFi 智能合约/事件合约开发，需 Solidity 基础",
+      "rewardSummary": "$5,000 奖金池，Somnia Network 主办，聚焦 Event Contracts / 预测市场；线上赛，8/25 开始提交，9/8 截止",
+      "rewardDetail": "$5,000 奖金池，Somnia Network 主办，聚焦 Event Contracts / 预测市场；线上赛，8/25 开始提交，9/8 截止",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "DoraHacks 页面预注册（已开放）",
+      "winningCriteria": "评审评选",
+      "timelineNotes": "预注册 8/18 开放；提交 8/25 ~ 9/8",
+      "startAt": "2026-08-18T16:00:00.000Z",
+      "endAt": "2026-09-08T15:59:59.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/event-contracts",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-19T02:22:39.813Z",
+      "slug": "event-contracts-hackathon-defi-5k"
+    },
+    {
+      "id": "recvsHNmUt3HL2",
+      "title": "Anna AI App Builder Program — AI原生应用开发激励 $6K",
+      "vendor": "Anna AI",
+      "type": "dev-incentive",
+      "score": 3,
+      "difficulty": 2,
+      "difficultyNote": "无需新语言，HTML/CSS/JS 或 React 即可，Anna AI app runtime 平台",
+      "rewardSummary": "$6,000 奖金池；在 Anna AI 平台构建 AI-native 应用原型（生产力/研究/创作/游戏等）；8/1 已开放，11/30 截止",
+      "rewardDetail": "$6,000 奖金池；在 Anna AI 平台构建 AI-native 应用原型（生产力/研究/创作/游戏等）；8/1 已开放，11/30 截止",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "DoraHacks 页面注册",
+      "winningCriteria": "评审评选",
+      "timelineNotes": "8/1 开放提交，11/30 截止",
+      "startAt": "2026-08-18T16:00:00.000Z",
+      "endAt": "2026-11-30T15:59:59.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://dorahacks.io/hackathon/2349/detail",
+      "sourceChannel": "DoraHacks",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-19T02:22:49.508Z",
+      "slug": "anna-ai-app-builder-program-ai-6k"
     }
   ]
 }
