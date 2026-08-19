@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-19T03:22:22.504Z",
-  "recordCount": 147,
+  "generatedAt": "2026-08-19T13:22:41.626Z",
+  "recordCount": 149,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4169,6 +4169,63 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-19T02:22:49.508Z",
       "slug": "anna-ai-app-builder-program-ai-6k"
+    },
+    {
+      "id": "recvsKbtNTekOI",
+      "title": "The Great Agent Hackathon 2026 — 企业AI Agent赛(线上资格赛+班加罗尔24h决赛)",
+      "vendor": "Freshworks/TGPF 2026",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 4,
+      "difficultyNote": null,
+      "rewardSummary": "₹10万+总奖金：总冠军₹4万现金+₹3万ElevenLabs credits+₹47万Dodo credits；3赛道各₹2万现金；Top20各₹4.7万Do",
+      "rewardDetail": "₹10万+总奖金：总冠军₹4万现金+₹3万ElevenLabs credits+₹47万Dodo credits；3赛道各₹2万现金；Top20各₹4.7万Dodo credits。Freshworks+ElevenLabs主办，线上资格赛(8/25截止)入选后赴印度班加罗尔TGPF 2026现场24小时决赛",
+      "rewardTypes": [
+        "cash",
+        "api-credits"
+      ],
+      "format": "线上资格赛(原型+视频)+线下24h决赛",
+      "participation": "2人组队，Devpost注册，提交Figma原型/演示+1-2分钟视频+文字方案",
+      "winningCriteria": "线上评审选出shortlist，现场决赛主舞台路演",
+      "timelineNotes": null,
+      "startAt": "2026-08-18T16:00:00.000Z",
+      "endAt": "2026-08-25T18:15:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://the-great-agent-hackathon.devpost.com/",
+      "sourceChannel": "AgentDeadlines",
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-19T12:11:08.070Z",
+      "slug": "the-great-agent-hackathon-2026-ai-agent-24h"
+    },
+    {
+      "id": "recvsKbvQKFIdd",
+      "title": "Agenthon 2026 — NeurIPS量化金融Agent竞赛 4赛道(注册9/28截止)",
+      "vendor": "SQA/NeurIPS 2026",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 4,
+      "difficultyNote": null,
+      "rewardSummary": "奖金池未公布(页面无金额，赞助招商中)；NeurIPS 2026 Competition Track，4赛道：量化编码Agent/时序预测/市场模拟/表格预测，",
+      "rewardDetail": "奖金池未公布(页面无金额，赞助招商中)；NeurIPS 2026 Competition Track，4赛道：量化编码Agent/时序预测/市场模拟/表格预测，Docker agent提交+自动化g0-g3验证门禁，合作方含AllianceBernstein/Bloomberg/NVIDIA",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "线上，Docker agent提交，公开练习仓库+密封评测仓库",
+      "participation": "agenthon.net 注册，开发期8/3-9/28，9/29-10/12决赛评测",
+      "winningCriteria": "通过验证门禁后按赛道指标排名，NeurIPS巴黎workshop颁奖",
+      "timelineNotes": null,
+      "startAt": "2026-08-18T16:00:00.000Z",
+      "endAt": "2026-09-28T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://www.agenthon.net/",
+      "sourceChannel": "AgentDeadlines",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-19T12:11:16.767Z",
+      "slug": "agenthon-2026-neurips-agent-4-9-28"
     }
   ]
 }
