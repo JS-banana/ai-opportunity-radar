@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-19T13:22:41.626Z",
-  "recordCount": 149,
+  "generatedAt": "2026-08-20T03:15:13.558Z",
+  "recordCount": 151,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4226,6 +4226,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-19T12:11:16.767Z",
       "slug": "agenthon-2026-neurips-agent-4-9-28"
+    },
+    {
+      "id": "recvsNBx8OHpTP",
+      "title": "2026 AI 先锋未来人才大赛 AI for Future Talent",
+      "vendor": "飞书(字节跳动)+IDEA联盟",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "面向高校在读学生(本科/硕士)，1-3人组队认领企业真实命题，需提交初步思路；全赛程免费使用官方AI工具",
+      "rewardSummary": "上百家名企(蔚来/瑞幸/安克创新/名创优品/去哪儿/小鹏/元气森林等)真实命题，奖励为实习/正式Offer+AI先锋荣誉+案例集收录；无现金奖。详情: http",
+      "rewardDetail": "上百家名企(蔚来/瑞幸/安克创新/名创优品/去哪儿/小鹏/元气森林等)真实命题，奖励为实习/正式Offer+AI先锋荣誉+案例集收录；无现金奖。详情: https://www.aitop100.cn/infomation/details/34142.html",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "线上报名+分赛区赛程，企业教练带教AI实战",
+      "participation": "登录活动官网报名，1-3人组队认领命题",
+      "winningCriteria": "企业命题方案评审，优秀选手获实习/Offer",
+      "timelineNotes": null,
+      "startAt": "2026-08-19T16:00:00.000Z",
+      "endAt": null,
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://activity.feishu.cn/future-talent",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-20T02:13:26.472Z",
+      "slug": "2026-ai-ai-for-future-talent"
+    },
+    {
+      "id": "recvsNBztt2CGd",
+      "title": "zai/glm-5.2 免费高速API渠道(8/27截止)",
+      "vendor": "Z.ai/Vercel",
+      "type": "benefit",
+      "score": 3,
+      "difficulty": 1,
+      "difficultyNote": "Vercel AI Gateway 免费档调用 zai/glm-5.2，需覆盖 User-Agent eve/0.27.8，可能需绑卡",
+      "rewardSummary": "免费高速(300tps)调用 zai/glm-5.2 模型，截止8/27；社区实测可用。帖子: https://linux.do/t/topic/2770513",
+      "rewardDetail": "免费高速(300tps)调用 zai/glm-5.2 模型，截止8/27；社区实测可用。帖子: https://linux.do/t/topic/2770513",
+      "rewardTypes": [
+        "api-credits"
+      ],
+      "format": "API渠道白嫖",
+      "participation": "配置 Vercel AI Gateway + UA 覆盖",
+      "winningCriteria": "免费使用至8/27，之后恢复付费",
+      "timelineNotes": null,
+      "startAt": "2026-08-19T16:00:00.000Z",
+      "endAt": "2026-08-26T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "suspected",
+      "registrationUrl": "https://linux.do/t/topic/2770513",
+      "sourceChannel": null,
+      "estimatedEffort": "1天内",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-20T02:13:36.094Z",
+      "slug": "zai-glm-5-2-api-8-27"
     }
   ]
 }
