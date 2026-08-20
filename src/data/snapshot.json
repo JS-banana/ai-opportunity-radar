@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T03:15:13.558Z",
-  "recordCount": 151,
+  "generatedAt": "2026-08-20T13:24:46.160Z",
+  "recordCount": 153,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4282,6 +4282,62 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-20T02:13:36.094Z",
       "slug": "zai-glm-5-2-api-8-27"
+    },
+    {
+      "id": "recvsQ2s52O7vV",
+      "title": "AIMO Interpretability Challenge @ NeurIPS 2026 — $12.5K+$5K 鲁棒/伪推理判别赛",
+      "vendor": "Fields Model Initiative",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 5,
+      "difficultyNote": "可解释性/SAE/transcoder 研究向，需将方法封装为 Codabench 提交包，评估时无网络",
+      "rewardSummary": "Main+Small Models 赛道共 $12,500，另设 $5,000 技术报告奖（Writeup Prizes）。参赛系统需判别前沿模型是真正解题还是",
+      "rewardDetail": "Main+Small Models 赛道共 $12,500，另设 $5,000 技术报告奖（Writeup Prizes）。参赛系统需判别前沿模型是真正解题还是伪推理（鲁棒 vs spurious reasoning），可申请 Fields Model Initiative 算力支持",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "官网注册表单+Discord 获取更新，克隆 getting-started 仓库提交示例即可上榜；Codabench 提交",
+      "winningCriteria": "按测试集鲁棒性判别准确率排名，双赛道独立评奖，平局按运行效率破平；写up奖不限排名",
+      "timelineNotes": "提交截止 2026-11-01（AgentDeadlines 标注 NeurIPS workshop 结束 12-13）；公开赛制无需先参加 AIMO",
+      "startAt": "2026-08-19T16:00:00.000Z",
+      "endAt": "2026-11-01T00:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://aimo-interp.github.io/",
+      "sourceChannel": "AgentDeadlines",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-20T12:12:54.848Z",
+      "slug": "aimo-interpretability-challenge-neurips-2026-12-5k-5k"
+    },
+    {
+      "id": "recvsQ2ueD8E8g",
+      "title": "The Steerability Challenge @ NeurIPS 2026 — 去谄媚化Steering管道竞赛",
+      "vendor": "IBM",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 4,
+      "difficultyNote": "研究向：构造 .spipe 格式 steering pipeline（prompt/权重/激活/解码任意组合），用 IBM AISteer360 工具包评测",
+      "rewardSummary": "现金奖（金额未公布），获奖团队受邀 NeurIPS 2026 工作坊展示；优秀管道可入选社区贡献示例。降低模型 sycophancy 同时保持通用能力",
+      "rewardDetail": "现金奖（金额未公布），获奖团队受邀 NeurIPS 2026 工作坊展示；优秀管道可入选社区贡献示例。降低模型 sycophancy 同时保持通用能力",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "官网邮件列表注册获取启动包与 office hours，提交 Codabench 系统",
+      "winningCriteria": "综合评分=谄媚度降低-通用能力回退惩罚，评测集保密防刷分；截止日期 Anywhere-on-Earth",
+      "timelineNotes": "截止 2026-12-13（NeurIPS 2026 巴黎工作坊）；8/29 开赛",
+      "startAt": "2026-08-19T16:00:00.000Z",
+      "endAt": "2026-12-13T00:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://steerability.github.io/competition",
+      "sourceChannel": "AgentDeadlines",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-20T12:13:03.516Z",
+      "slug": "the-steerability-challenge-neurips-2026-steering"
     }
   ]
 }
