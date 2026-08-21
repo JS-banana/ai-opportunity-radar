@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T13:24:46.160Z",
-  "recordCount": 153,
+  "generatedAt": "2026-08-21T03:27:21.441Z",
+  "recordCount": 154,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4338,6 +4338,34 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-20T12:13:03.516Z",
       "slug": "the-steerability-challenge-neurips-2026-steering"
+    },
+    {
+      "id": "recvsTsveQPz8U",
+      "title": "IEEE ClimateChain Global Hackathon 2026 — AI+Blockchain气候行动 $3K",
+      "vendor": "IEEE Turkey",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "学生限定：学生/研究者/开发者可参赛，公司及专业组织不可报名",
+      "rewardSummary": "$3,000 现金奖池；获奖者于 2026.11 联合国 COP31 颁奖典礼公布并展示作品，连接 IEEE Blockchain 社区",
+      "rewardDetail": "$3,000 现金奖池；获奖者于 2026.11 联合国 COP31 颁奖典礼公布并展示作品，连接 IEEE Blockchain 社区",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上（Devpost）",
+      "participation": "Devpost 注册（7/15 已开放报名），10/5 开赛",
+      "winningCriteria": "基于区块链+AI 构建气候解决方案：碳市场透明度、可再生能源、可持续供应链、气候数据透明（支持 UN COP31 目标）",
+      "timelineNotes": "10/5-10/25 在线构建，10/25 23:59 UTC 提交截止，11/10-21 COP31 公布获奖；详情见 https://ieee-iget.org/climatechain-global-hackathon-2026",
+      "startAt": "2026-08-20T16:00:00.000Z",
+      "endAt": "2026-10-24T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://ieee-climatechain-hack.devpost.com/",
+      "sourceChannel": "Devpost",
+      "estimatedEffort": "1-3天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-21T02:15:10.735Z",
+      "slug": "ieee-climatechain-global-hackathon-2026-ai-blockchain-3k"
     }
   ]
 }
