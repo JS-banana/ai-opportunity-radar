@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T03:27:21.441Z",
-  "recordCount": 154,
+  "generatedAt": "2026-08-21T13:23:55.256Z",
+  "recordCount": 156,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4366,6 +4366,64 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-21T02:15:10.735Z",
       "slug": "ieee-climatechain-global-hackathon-2026-ai-blockchain-3k"
+    },
+    {
+      "id": "recvsVSOH9Q3NA",
+      "title": "AI社会科学家研究挑战赛（AgentSociety²）— 提交研究计划¥300+200元API额度",
+      "vendor": "清华大学",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": null,
+      "rewardSummary": "提交研究计划¥200（新用户再+¥100=¥300）+200元API初始额度+线上VSCode工作空间；优秀团队获进一步LLM API支持。清华大学计算社会科学",
+      "rewardDetail": "提交研究计划¥200（新用户再+¥100=¥300）+200元API初始额度+线上VSCode工作空间；优秀团队获进一步LLM API支持。清华大学计算社会科学与国家治理实验室+电子工程系主办，基于AgentSociety²智能体社会模拟平台。详情: https://www.leiphone.com/category/industrynews/CbroiTWerVTsMc8i.html",
+      "rewardTypes": [
+        "cash",
+        "api-credits"
+      ],
+      "format": null,
+      "participation": "3-5人组队（可加1-2名指导老师），登录 agentsociety2.fiblab.net 报名并领取算力券",
+      "winningCriteria": null,
+      "timelineNotes": "初筛9/15；现场评审与颁奖10/25",
+      "startAt": "2026-08-20T16:00:00.000Z",
+      "endAt": "2026-09-14T16:00:00.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://agentsociety2.fiblab.net/challenges",
+      "sourceChannel": null,
+      "estimatedEffort": "1周+",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-21T12:12:16.702Z",
+      "slug": "ai-agentsociety-300-200-api"
+    },
+    {
+      "id": "recvsVSQPwp8L4",
+      "title": "Hack-Nation Global AI Hackathon 7 — $35K+现金与Credits 10/3-4全球14城",
+      "vendor": "Hack-Nation",
+      "type": "hackathon",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": null,
+      "rewardSummary": "$35K+ cash & credits；24小时全球AI Hackathon，线上+14城线下Hub混合。MIT CNC/MIT Germany关联。滚动批次",
+      "rewardDetail": "$35K+ cash & credits；24小时全球AI Hackathon，线上+14城线下Hub混合。MIT CNC/MIT Germany关联。滚动批次申请：Batch 2: 8/22、Batch 3: 9/5、Batch 4: 9/12、Batch 5: 9/19、Batch 6: 9/26",
+      "rewardTypes": [
+        "cash",
+        "api-credits"
+      ],
+      "format": null,
+      "participation": "官网申请制（批审），10/3-4活动日",
+      "winningCriteria": null,
+      "timelineNotes": "最近申请批次8/22截止；最后批次9/26",
+      "startAt": "2026-08-20T16:00:00.000Z",
+      "endAt": "2026-09-26T15:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://hack-nation.ai/start",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-21T12:12:25.236Z",
+      "slug": "hack-nation-global-ai-hackathon-7-35k-credits-10-3-4-14"
     }
   ]
 }
