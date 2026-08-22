@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T13:23:55.256Z",
-  "recordCount": 156,
+  "generatedAt": "2026-08-22T03:12:29.333Z",
+  "recordCount": 157,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4424,6 +4424,34 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-21T12:12:25.236Z",
       "slug": "hack-nation-global-ai-hackathon-7-35k-credits-10-3-4-14"
+    },
+    {
+      "id": "recvsZmsnP8WTD",
+      "title": "RoCo-Spring: Robust Correspondence Challenge @ NeurIPS 2026",
+      "vendor": "NeurIPS 2026",
+      "type": "ai-competition",
+      "score": 3,
+      "difficulty": 4,
+      "difficultyNote": "CV 研究方向，需光流/立体匹配/场景流算法经验，纯研究型竞赛无工程门槛",
+      "rewardSummary": "无现金奖；入选 NeurIPS 2026 Competition Track workshop 论文展示+获奖认可（4赛道：光流/立体匹配/场景流/探索分析），",
+      "rewardDetail": "无现金奖；入选 NeurIPS 2026 Competition Track workshop 论文展示+获奖认可（4赛道：光流/立体匹配/场景流/探索分析），学术发表价值为主",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "线上 leaderboard 提交 + 12月 NeurIPS 线下 workshop（12/11-12）",
+      "participation": "官网注册即可，dev leaderboard 已开放；提交 4-6 页 workshop 论文",
+      "winningCriteria": "论文提交 9/15；定量提交 9/30；10/15 最终评估与获奖短名单",
+      "timelineNotes": "详情见 https://roco-spring.github.io",
+      "startAt": "2026-08-21T16:00:00.000Z",
+      "endAt": "2026-09-29T16:00:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://roco-spring.github.io/",
+      "sourceChannel": null,
+      "estimatedEffort": "1周+",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-22T02:28:48.560Z",
+      "slug": "roco-spring-robust-correspondence-challenge-neurips-2026"
     }
   ]
 }
