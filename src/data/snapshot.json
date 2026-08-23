@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T13:07:21.078Z",
-  "recordCount": 157,
+  "generatedAt": "2026-08-23T03:27:00.521Z",
+  "recordCount": 158,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4452,6 +4452,34 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-22T02:28:48.560Z",
       "slug": "roco-spring-robust-correspondence-challenge-neurips-2026"
+    },
+    {
+      "id": "recvt57Mk0TVE9",
+      "title": "#CODETOIMPACT Hackathon 2026 — GIC×Anthropic 新加坡1日赛",
+      "vendor": "GIC + Anthropic",
+      "type": "dev-challenge",
+      "score": 4,
+      "difficulty": 4,
+      "difficultyNote": "需注册并通过技术评估(7-8/28)，决赛在GIC新加坡办公室线下进行",
+      "rewardSummary": "现金奖+奖品；GIC早期职业项目(实习/正式Offer)快速通道；Anthropic技术团队现场分享",
+      "rewardDetail": "现金奖+奖品；GIC早期职业项目(实习/正式Offer)快速通道；Anthropic技术团队现场分享",
+      "rewardTypes": [
+        "other"
+      ],
+      "format": "线下1日赛(GIC新加坡办公室 9/18) + 线上注册评估",
+      "participation": "官网注册并完成技术评估，截止8/28 23:59 SGT；9/17问题发布，9/18线下赛",
+      "winningCriteria": "技术评估晋级+9/18线下评审",
+      "timelineNotes": "注册+技术评估截止 2026-08-28 23:59 SGT(🟠5天内)；9/17题目线上发布；9/18 08:30-22:00 线下赛",
+      "startAt": "2026-08-22T16:00:00.000Z",
+      "endAt": "2026-08-28T15:59:00.000Z",
+      "region": "other",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://gic.careers/events/codetoimpact-hackathon-2026",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-23T02:08:09.336Z",
+      "slug": "codetoimpact-hackathon-2026-gic-anthropic-1"
     }
   ]
 }
