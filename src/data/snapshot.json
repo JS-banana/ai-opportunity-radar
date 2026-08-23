@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-23T03:27:00.521Z",
-  "recordCount": 158,
+  "generatedAt": "2026-08-23T13:08:23.211Z",
+  "recordCount": 161,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4480,6 +4480,90 @@
       "suggestion": "worth-doing",
       "discoveredAt": "2026-08-23T02:08:09.336Z",
       "slug": "codetoimpact-hackathon-2026-gic-anthropic-1"
+    },
+    {
+      "id": "recvt7zXHhwdjx",
+      "title": "2026腾讯游戏创作大赛 — ¥401万现金池 AI游戏赛道",
+      "vendor": "腾讯游戏",
+      "type": "content-creation",
+      "score": 4,
+      "difficulty": 3,
+      "difficultyNote": "游戏创作，支持单人/团队；腾讯提供AI工具参赛包+CodeBuddy 100万Credits补贴降低门槛",
+      "rewardSummary": "总奖池401.1万元现金，主赛区金奖¥10万；另有CodeBuddy ¥100万 Credits补贴；4/18-9/15作品征集",
+      "rewardDetail": "总奖池401.1万元现金，主赛区金奖¥10万；另有CodeBuddy ¥100万 Credits补贴；4/18-9/15作品征集",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "官网报名提交作品，主赛区（自由创意/AI游戏/小红花）+ 和平精英/三角洲/元梦之星/洛克王国共创赛区",
+      "winningCriteria": "初赛→复赛→决赛评审，11/27颁奖",
+      "timelineNotes": null,
+      "startAt": "2026-08-22T16:00:00.000Z",
+      "endAt": "2026-09-15T15:59:59.000Z",
+      "region": "china",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://gameinstitute.qq.com/awards2026",
+      "sourceChannel": null,
+      "estimatedEffort": "1-3天",
+      "suggestion": "worth-doing",
+      "discoveredAt": "2026-08-23T12:12:39.045Z",
+      "slug": "2026-401-ai"
+    },
+    {
+      "id": "recvt7A0PidOVu",
+      "title": "昇腾AI原生创新算子挑战赛 S9赛季 — Ascend C算子开发 年度冠军赛百万奖金",
+      "vendor": "华为(昇腾)",
+      "type": "dev-challenge",
+      "score": 3,
+      "difficulty": 5,
+      "difficultyNote": "要求精通Ascend C算子开发，基于昇腾AI云算力+CANN深度创新",
+      "rewardSummary": "赛季奖金制（模型优化赛金奖¥2万级），年度冠军赛角逐百万奖金；2026/06-09 S9赛季进行中",
+      "rewardDetail": "赛季奖金制（模型优化赛金奖¥2万级），年度冠军赛角逐百万奖金；2026/06-09 S9赛季进行中",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "线上",
+      "participation": "昇腾社区官网报名，领取赛题开发算子并提交验收",
+      "winningCriteria": "算子通过验收测试并PR合入，按先后顺序领取奖金",
+      "timelineNotes": null,
+      "startAt": "2026-08-22T16:00:00.000Z",
+      "endAt": "2026-09-30T15:59:59.000Z",
+      "region": "other",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://www.hiascend.com/developer/ops",
+      "sourceChannel": null,
+      "estimatedEffort": "1-2周",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-23T12:12:51.559Z",
+      "slug": "ai-s9-ascend-c"
+    },
+    {
+      "id": "recvt7A2E11Umn",
+      "title": "AMD Developer Hackathon ACT III — $5K+ AI Agents on AMD GPUs",
+      "vendor": "AMD",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需注册AMD AI Developer Program(ADP)；线上build 10/12-18，线下10/17-18罗马/米兰/Imperia（邀请制）",
+      "rewardSummary": "$5,000+ 奖金池，AMD GPU云上开发AI Agent/高性能AI应用",
+      "rewardDetail": "$5,000+ 奖金池，AMD GPU云上开发AI Agent/高性能AI应用",
+      "rewardTypes": [
+        "cash"
+      ],
+      "format": "混合(线上为主)",
+      "participation": "lablab.ai 页面 Sign up with AMD 注册参加",
+      "winningCriteria": "提交AI应用项目，线下展示加分",
+      "timelineNotes": null,
+      "startAt": "2026-08-22T16:00:00.000Z",
+      "endAt": "2026-10-18T15:59:59.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii",
+      "sourceChannel": "lablab.ai",
+      "estimatedEffort": "3-5天",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-23T12:12:58.398Z",
+      "slug": "amd-developer-hackathon-act-iii-5k-ai-agents-on-amd-gpus"
     }
   ]
 }
