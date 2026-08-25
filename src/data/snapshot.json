@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T13:28:14.372Z",
-  "recordCount": 161,
+  "generatedAt": "2026-08-25T03:24:06.676Z",
+  "recordCount": 162,
   "skippedCount": 10,
   "opportunities": [
     {
@@ -4564,6 +4564,35 @@
       "suggestion": "watch",
       "discoveredAt": "2026-08-23T12:12:58.398Z",
       "slug": "amd-developer-hackathon-act-iii-5k-ai-agents-on-amd-gpus"
+    },
+    {
+      "id": "recvtgTtu0IiSf",
+      "title": "Creatio Agent Arena Hackathon 2026",
+      "vendor": "Creatio",
+      "type": "hackathon",
+      "score": 3,
+      "difficulty": 3,
+      "difficultyNote": "需学习 Creatio AI Studio 平台，团队≥2人，至少1人参加Tech Hour或完成AI Studio track",
+      "rewardSummary": "非现金硬件奖：1st=2×Meta Ray-Ban Display+年度AI工具订阅(Claude/ChatGPT/Midjourney)；2nd=Oakley",
+      "rewardDetail": "非现金硬件奖：1st=2×Meta Ray-Ban Display+年度AI工具订阅(Claude/ChatGPT/Midjourney)；2nd=Oakley Meta Vanguard+Oura Ring+AI订阅；3-4th=Plaud Note Pro+Ray-Ban Meta Gen2",
+      "rewardTypes": [
+        "physical",
+        "membership"
+      ],
+      "format": "线上全球，9/16 kickoff，9/30提交截止，10/9决赛",
+      "participation": "9/2开放注册，官网注册团队",
+      "winningCriteria": "4类别(行业Agent/CRM Agent/全渠道Agent/AI Studio Twin)各1队获奖，决赛4强角逐总冠军",
+      "timelineNotes": "注册开放9/2；kickoff 9/16；提交截止9/30 23:59；决赛10/9",
+      "startAt": "2026-08-24T16:00:00.000Z",
+      "endAt": "2026-10-01T03:59:00.000Z",
+      "region": "global",
+      "officialStatus": "confirmed",
+      "registrationUrl": "https://www.creatio.com/page/agent-arena-hackathon-2026",
+      "sourceChannel": null,
+      "estimatedEffort": "1周+",
+      "suggestion": "watch",
+      "discoveredAt": "2026-08-25T02:26:35.868Z",
+      "slug": "creatio-agent-arena-hackathon-2026"
     }
   ]
 }
