@@ -1,8 +1,8 @@
 name: Deploy to Cloudflare Workers
 
+# Retired at the owner's request. Preserve the implementation for reference.
+# No automatic triggers; manual runs also skip the retired job below.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 concurrency:
@@ -11,6 +11,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

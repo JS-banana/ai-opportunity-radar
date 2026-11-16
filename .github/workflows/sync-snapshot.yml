@@ -1,9 +1,8 @@
 name: Sync Feishu snapshot
 
+# Retired at the owner's request. Preserve the implementation for reference.
+# No automatic triggers; manual runs also skip the retired job below.
 on:
-  schedule:
-    # 北京时间约 10:30 / 20:30（上游采集完成后）
-    - cron: "30 2,12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,6 +14,7 @@ concurrency:
 
 jobs:
   sync:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
